@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Наумов Никита](https://up.htmlacademy.ru/adaptive/26/user/2068313).
-* Наставник: `Неизвестно`.
+*  Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
