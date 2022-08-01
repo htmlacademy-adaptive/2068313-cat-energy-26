@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
 </head>
@@ -10,38 +11,46 @@
 <body>
 
   <header class="main-header">
+
     <a class="main-header__logo">
       <img src="img/logo-img.svg" width="33" height="37" alt="Картинка кота.">
     </a>
+
     <a class="main-header__logo">
       <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy.">
     </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="nav">
+
+      <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
+      <div class="nav__wrapper">
 
-          <li class="site-list__item site-list__item--active">
+        <ul class="nav__list">
+
+          <li class="nav-list__item nav-list__item--active">
             <a href="index.html">Главная</a>
           </li>
 
-          <li class="site-list__item">
+          <li class="nav-list__item">
             <a href="catalog.html">каталог продукции</a>
           </li>
 
-          <li class="site-list__item">
+          <li class="nav-list__item">
             <a href="form.html">подбор программы</a>
           </li>
 
+        </ul>
+
       </div>
+
     </nav>
+
   </header>
 
-  <main class="main-container">
+  <main class="main-container form">
     <h1 class="form__title">Подбор программы</h1>
     <p class="form__desc">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
@@ -49,51 +58,51 @@
     <form action="https://echo.htmlacademy.ru/" method="get">
 
       <fieldset>
-        <label>
-          <p class="input-desc">ИМЯ:*</p>
-          <input type="text" placeholder="барсик">
+        <label class="input-desc">
+          ИМЯ:*
+          <input type="email" placeholder="барсик">
         </label>
-        <label>
-          <p class="input-desc">Вес (кг):*</p>
+        <label class="input-desc">
+          Вес (кг):*
           <input type="text" placeholder="7">
         </label>
-        <label>
-          <p class="input-desc">Возраст (лет):</p>
+        <label class="input-desc">
+          Возраст (лет):
           <input type="text" placeholder="7">
         </label>
       </fieldset>
 
       <fieldset>
-        <label>
+        <label class="input-desc">
           <input type="radio" name="slim" value="slim" checked>
-          <p class="input-desc">похудение</p>
+          похудение
         </label>
-        <label>
+        <label class="input-desc">
           <input type="radio" name="mass" value="mass">
-          <p class="input-desc">Набор массы</p>
+          Набор массы
         </label>
-        <label>
+        <label class="input-desc">
           <input type="radio" name="und" value="und">
-          <p class="input-desc">Не знаю (Нужен ваш совет)</p>
+          Не знаю (Нужен ваш совет)
         </label>
       </fieldset>
 
       <fieldset>
-        <legend class="legend__title">
+        <legend class="legend-title">
           Контактные данные (владельца кота)
         </legend>
-        <label>
-          <p class="input-desc">E-mail:*</p>
+        <label class="input-desc">
+          E-mail:*
           <input type="email" placeholder="kuklachev@gmail.com">
         </label>
-        <label>
-          <p class="input-desc">Телефон:*</p>
+        <label class="input-desc">
+          Телефон:*
           <input type="tel" placeholder="8 (960) 900-60-90">
         </label>
       </fieldset>
 
       <fieldset>
-        <legend class="legend__title">
+        <legend class="legend-title">
           Комментарий
         </legend>
         <label>
@@ -104,35 +113,37 @@
 
 
       <fieldset>
-        <legend class="legend__title">
+        <legend class="legend-title">
           Дополнительно
         </legend>
-        <label>
+        <label class="input-desc">
           <input type="checkbox" name="shugar" value="shugar" checked>
-          <p class="input-desc">сахарозаменитель</p>
+          сахарозаменитель
         </label>
-        <label>
+        <label class="input-desc">
           <input type="checkbox" name="water" value="water">
-          <p class="input-desc">питьевая вода</p>
+          питьевая вода
         </label>
-        <label>
+        <label class="input-desc">
           <input type="checkbox" name="milk" value="milk">
-          <p class="input-desc">молоко</p>
+          молоко
         </label>
-        <label>
+        <label class="input-desc">
           <input type="checkbox" name="vitamins" value="vitamins">
-          <p class="input-desc">витамины</p>
+          витамины
         </label>
 
       </fieldset>
 
-      <a href="#" class="button form-button" type="submit">отправить заявку</a>
+      <button class="button form-button" type="submit">отправить заявку</button>
       <p class="form__desc">* — Обязательные поля</p>
 
     </form>
+
     <div class="invite">
       <p class="invite__title">приглашаем к сотрудничеству дилеров!</p>
       <p class="invite__desc">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+
     </div>
 
     <div class="location">
@@ -140,7 +151,6 @@
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.61969609936!2d30.329148!3d59.937868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee3abe449bc142d7!2z0JzQuNGF0LDQudC70L7QstGB0LrQuNC5INGC0LXQsNGC0YA!5e0!3m2!1sru!2s!4v1658948780658!5m2!1sru!2s"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="location__icon"></div>
     </div>
 
   </main>
@@ -151,7 +161,7 @@
       <img src="img/logo-title.svg" width="128" height="24" alt="Картинка кота.">
     </a>
 
-    <ul class="social__list">
+    <ul class="social">
 
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -178,7 +188,6 @@
     </div>
 
   </footer>
-
 </body>
 
 </html>
