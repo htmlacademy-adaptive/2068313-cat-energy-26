@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,10 +15,8 @@
 
     <a class="main-header__logo">
       <img src="img/logo-img.svg" width="33" height="37" alt="Картинка кота.">
-    </a>
 
-    <a class="main-header__logo">
-      <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy.">
+      <img class="main-header__logo-text" src="img/logo-title.svg" width="101" height="18" alt="Cat energy.">
     </a>
 
     <nav class="nav">
@@ -30,16 +29,16 @@
 
         <ul class="nav__list">
 
-          <li class="nav-list__item nav-list__item--active">
-            <a href="index.html">Главная</a>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
 
-          <li class="nav-list__item">
-            <a href="catalog.html">каталог продукции</a>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">каталог продукции</a>
           </li>
 
-          <li class="nav-list__item">
-            <a href="form.html">подбор программы</a>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">подбор программы</a>
           </li>
 
         </ul>
@@ -57,7 +56,7 @@
       <h1 class="article__title">Функциональное питание для котов</h1>
       <p class="article__desc">Занялся собой? Займись котом!</p>
       <div class="poster">
-        <img class="poster__img" src="img/poster.jpg" alt="банка с едой?." width="280" height="270">
+        <img class="poster__img" src="img/poster.png" alt="банка с едой?." width="280" height="270">
         <a href="form.html" class="button">подобрать программу</a>
       </div>
     </article>
