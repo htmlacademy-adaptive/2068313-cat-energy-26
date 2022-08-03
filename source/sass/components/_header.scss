@@ -21,7 +21,6 @@
 .nav {
   display: flex;
   flex-direction: column;
-  position: relative;
 
   &__toggle {
     display: block;
@@ -43,10 +42,9 @@
 
   &__wrapper {
     position: absolute;
-    top: 40px;
-    transform: translate(-87%, 0);
-    min-width: 320px;
     width: 100%;
+    top: 70px;
+    left: 0;
     background: $color-white;
     z-index: 1;
     display: none;
