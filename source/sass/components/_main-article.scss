@@ -1,9 +1,9 @@
 .article {
   padding: 20px;
-  min-height: 302px;
-  background: rgba(104, 183, 56, 0.85);//, url(../img/background-cat.jpg);
+  min-height: 320px;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat.jpg);
   background-repeat: no-repeat;
-  background-size: 100%, 320px;
+  background-size: 100% 320px;
 
 
   &__title {
