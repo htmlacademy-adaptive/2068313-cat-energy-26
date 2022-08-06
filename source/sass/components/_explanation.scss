@@ -20,7 +20,7 @@
     margin: 0;
     margin-right: 20px;
     margin-left: 40px;
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
 
     &::before {
       content: "";
@@ -34,16 +34,19 @@
     }
 
     &--leaf::before {
-      background-image: url(../../img/icons/leaf.png);
+      background-image: url(../img/icons/leaf.png);
     }
+
     &--powder::before {
-      background-image: url(../../img/icons/powder.png);
+      background-image: url(../img/icons/powder.png);
     }
+
     &--food::before {
-      background-image: url(../../img/icons/food.png);
+      background-image: url(../img/icons/food.png);
     }
+
     &--clock::before {
-      background-image: url(../../img/icons/clock.png);
+      background-image: url(../img/icons/clock.png);
     }
   }
 }
