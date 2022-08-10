@@ -1,53 +1,53 @@
 .explanation {
   padding: 0 20px;
+}
 
-  &__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
+.explanation__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.explanation__item {
+  height: 80px;
+}
+
+.explanation__desc {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  margin-right: 20px;
+  margin-left: 40px;
+  padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: -80px;
   }
 
-  &__item {
-    height: 80px;
+  &--leaf::before {
+    background-image: url(../img/icons/leaf.png);
   }
 
-  &__desc {
-    position: relative;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #444444;
-    margin: 0;
-    margin-right: 20px;
-    margin-left: 40px;
-    padding-bottom: 20px;
+  &--powder::before {
+    background-image: url(../img/icons/powder.png);
+  }
 
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 60px;
-      height: 60px;
-      padding: 20px;
-      position: absolute;
-      top: 0;
-      left: -80px;
-    }
+  &--food::before {
+    background-image: url(../img/icons/food.png);
+  }
 
-    &--leaf::before {
-      background-image: url(../img/icons/leaf.png);
-    }
-
-    &--powder::before {
-      background-image: url(../img/icons/powder.png);
-    }
-
-    &--food::before {
-      background-image: url(../img/icons/food.png);
-    }
-
-    &--clock::before {
-      background-image: url(../img/icons/clock.png);
-    }
+  &--clock::before {
+    background-image: url(../img/icons/clock.png);
   }
 }
 

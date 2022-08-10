@@ -1,0 +1,93 @@
+.catalog-title {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.addition {
+  padding: 0 20px;
+}
+
+.addition__card {
+  border-top: 1px solid #cdcdcd;
+}
+
+.addition-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  padding-top: 25px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.addition__title {
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.addition__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addition__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin-top: 0;
+}
+
+.addition__button {
+  margin-bottom: 20px;
+}
+
+.addition__gift {
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  border-top: 1px solid #cdcdcd;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/catinbag.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 320px;
+  padding: 60px 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.addition__title-gift {
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.addition__link {
+  display: block;
+  background-image: url(../img/icons/icon_gift.svg);
+  width: 80px;
+  height: 80px;
+}
+
+.invite {
+  display: flex;
+}
+
+.invite__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: $color-txt-gray;
+}

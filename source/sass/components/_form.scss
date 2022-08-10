@@ -1,25 +1,25 @@
 .form {
   overflow: hidden;
+}
 
-  &__title {
-    margin: 0;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    color: $color-black;
-    padding: 0 20px;
-    border-top: 1px solid #D9D9D9;
-    padding-top: 27px;
-    padding-bottom: 17px;
-  }
+.form__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-txt-black;
+  padding: 0 20px;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 27px;
+  padding-bottom: 17px;
+}
 
-  &__desc {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: $color-black;
-    padding: 0 20px;
-  }
+.form__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-txt-black;
+  padding: 0 20px;
 }
 
 .field-user {
@@ -38,8 +38,8 @@
   border: none;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .input-desc {
@@ -48,7 +48,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $color-gray;
+  color: $color-txt-gray;
   display: flex;
   align-items: center;
   margin-bottom: 13px;
@@ -65,7 +65,7 @@ input[type=text], input[type=email], input[type=tel] {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: $color-gray;
+  color: $color-txt-gray;
   margin-left: 13px;
 }
 
@@ -90,7 +90,7 @@ input[type=text], input[type=email], input[type=tel] {
     display: inline-block;
     width: 100%;
     height: 2px;
-    background-color: $bg-item;
+    background-color: $color-bg-item;
     position: absolute;
     top: 48%;
     left: 120%;
@@ -112,7 +112,7 @@ input[type=text], input[type=email], input[type=tel] {
     display: inline-block;
     width: 100%;
     height: 2px;
-    background-color: $bg-item;
+    background-color: $color-bg-item;
     position: absolute;
     top: 35%;
     left: 90%;
@@ -157,7 +157,7 @@ input[type=text], input[type=email], input[type=tel] {
 textarea {
   padding: 10px;
   width: 100%;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 
   &::placeholder {
     font-family: $font;
@@ -193,7 +193,7 @@ textarea {
 }
 
 .invite-bg {
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 // inputs icons
@@ -204,7 +204,7 @@ textarea {
   opacity: 0;
 
   &:checked+label > .radio-bg {
-    background: $bg-item;
+    background: $color-bg-item;
     border-radius: 50%;
     width: 14px;
     height: 14px;
@@ -223,7 +223,7 @@ textarea {
     &::before {
       content: "";
       display: block;
-      border: 1px solid #CDCDCD;
+      border: 1px solid #cdcdcd;
       border-radius: 50%;
       padding: 10px;
       width: 30px;
@@ -259,7 +259,7 @@ textarea {
     &::before {
       content: "";
       display: block;
-      border: 1px solid #CDCDCD;
+      border: 1px solid #cdcdcd;
       padding: 10px;
       width: 30px;
       height: 30px;

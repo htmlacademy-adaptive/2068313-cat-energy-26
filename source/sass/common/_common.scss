@@ -7,15 +7,7 @@
 body {
   margin: 0 auto;
   font-family: $font, "Arial";
-  background: $body;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
+  background: $color-body-bg;
 }
 
 .visually-hidden {
@@ -29,17 +21,4 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.button {
-  display: inline-block;
-  background-color: $bg-item;
-  color: $color-white;
-  padding: 7px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  width: 100%;
 }

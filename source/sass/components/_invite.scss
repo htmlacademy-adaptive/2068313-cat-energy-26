@@ -1,24 +1,24 @@
 .invite {
   padding: 0 20px;
+}
 
-  &__title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #111111;
-    width: 139px;
-  }
+.invite__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  width: 139px;
+}
 
-  &__desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: right;
-    color: $color-gray;
-    display: none;
-  }
+.invite__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: $color-txt-gray;
+  display: none;
 }
 
 .location {
