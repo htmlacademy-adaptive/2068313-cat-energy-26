@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
   <header class="main-header">
 
-    <a class="main-header__logo">
+    <a href="index.html" class="main-header__logo">
       <img src="img/logo-img.svg" width="33" height="37" alt="Картинка кота.">
-    </a>
 
-    <a class="main-header__logo">
-      <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy.">
+      <img class="main-header__logo-text" src="img/logo-title.svg" width="101" height="18" alt="Cat energy.">
     </a>
 
     <nav class="nav">
@@ -29,16 +29,16 @@
 
         <ul class="nav__list">
 
-          <li class="nav-list__item nav-list__item--active">
-            <a href="index.html">Главная</a>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
 
-          <li class="nav-list__item">
-            <a href="catalog.html">каталог продукции</a>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">каталог продукции</a>
           </li>
 
-          <li class="nav-list__item">
-            <a href="form.html">подбор программы</a>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">подбор программы</a>
           </li>
 
         </ul>
@@ -63,42 +63,42 @@
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 500 г</caption>
             <tr>
-              <th>Масса</th>
-              <td>500 г</td>
+              <th class="table__desc">Масса</th>
+              <td class="table__desc">500 г</td>
             </tr>
             <tr>
-              <th>Вкус</th>
-              <td>Курица</td>
+              <th class="table__desc">Вкус</th>
+              <td class="table__desc">Курица</td>
             </tr>
             <tr>
-              <th>Цена</th>
-              <td>700 Р.</td>
+              <th class="table__desc">Цена</th>
+              <td class="table__desc">700 Р.</td>
             </tr>
           </table>
 
-          <a href="#" class="button">заказать</a>
+          <a href="#" class="card__button button">заказать</a>
 
         </div>
 
         <div class="card">
-          <img class="card__img" src="img/energy-orange.jpg" alt="cat energy 1000g." width="68" height="86">
+          <img class="card__img" src="img/energy-orange-big.jpg" alt="cat energy 1000g." width="68" height="86">
           <table class="card__table">
-            <caption class="card__title">Cat Energy PRO 500 г</caption>
+            <caption class="card__title">Cat Energy PRO 1000 г</caption>
             <tr>
-              <th>Масса</th>
-              <td>1000 г</td>
+              <th class="table__desc">Масса</th>
+              <td class="table__desc">1000 г</td>
             </tr>
             <tr>
-              <th>Вкус</th>
-              <td>Курица</td>
+              <th class="table__desc">Вкус</th>
+              <td class="table__desc">Курица</td>
             </tr>
             <tr>
-              <th>Цена</th>
-              <td>1000 Р.</td>
+              <th class="table__desc">Цена</th>
+              <td class="table__desc">1000 Р.</td>
             </tr>
           </table>
 
-          <a href="#" class="button">заказать</a>
+          <a href="#" class="card__button button">заказать</a>
 
         </div>
 
@@ -107,44 +107,44 @@
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 500 г</caption>
             <tr>
-              <th>Масса</th>
-              <td>500 г</td>
+              <th class="table__desc">Масса</th>
+              <td class="table__desc">500 г</td>
             </tr>
             <tr>
-              <th>Вкус</th>
-              <td>Рыба</td>
+              <th class="table__desc">Вкус</th>
+              <td class="table__desc">Рыба</td>
             </tr>
             <tr>
-              <th>Цена</th>
-              <td>700 Р.</td>
+              <th class="table__desc">Цена</th>
+              <td class="table__desc">700 Р.</td>
             </tr>
 
           </table>
 
-          <a href="#" class="button">заказать</a>
+          <a href="#" class="card__button button">заказать</a>
 
         </div>
 
         <div class="card">
-          <img class="card__img" src="img/energy-green.jpg" alt="cat energy 1000g." width="84" height="101">
+          <img class="card__img" src="img/energy-green-big.jpg" alt="cat energy 1000g." width="84" height="101">
           <table class="card__table">
-            <caption class="card__title">Cat Energy PRO 500 г</caption>
+            <caption class="card__title">Cat Energy PRO 1000 г</caption>
             <tr>
-              <th>Масса</th>
-              <td>1000 г</td>
+              <th class="table__desc">Масса</th>
+              <td class="table__desc">1000 г</td>
             </tr>
             <tr>
-              <th>Вкус</th>
-              <td>Рыба</td>
+              <th class="table__desc">Вкус</th>
+              <td class="table__desc">Рыба</td>
             </tr>
             <tr>
-              <th>Цена</th>
-              <td>1000 Р.</td>
+              <th class="table__desc">Цена</th>
+              <td class="table__desc">1000 Р.</td>
             </tr>
 
           </table>
 
-          <a href="#" class="button">заказать</a>
+          <a href="#" class="card__button button">заказать</a>
 
         </div>
 
@@ -153,44 +153,44 @@
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 500 г</caption>
             <tr>
-              <th>Масса</th>
-              <td>500 г</td>
+              <th class="table__desc">Масса</th>
+              <td class="table__desc">500 г</td>
             </tr>
             <tr>
-              <th>Вкус</th>
-              <td>Гречка</td>
+              <th class="table__desc">Вкус</th>
+              <td class="table__desc">Гречка</td>
             </tr>
             <tr>
-              <th>Цена</th>
-              <td>400 Р.</td>
+              <th class="table__desc">Цена</th>
+              <td class="table__desc">400 Р.</td>
             </tr>
 
           </table>
 
-          <a href="#" class="button">заказать</a>
+          <a href="#" class="card__button button">заказать</a>
 
         </div>
 
         <div class="card">
-          <img class="card__img" src="img/energy-blue.jpg" alt="cat energy 1000g." width="84" height="101">
+          <img class="card__img" src="img/energy-blue-big.jpg" alt="cat energy 1000g." width="84" height="101">
           <table class="card__table">
-            <caption class="card__title">Cat Energy PRO 500 г</caption>
+            <caption class="card__title">Cat Energy PRO 1000 г</caption>
             <tr>
-              <th>Масса</th>
-              <td>1000 г</td>
+              <th class="table__desc">Масса</th>
+              <td class="table__desc">1000 г</td>
             </tr>
             <tr>
-              <th>Вкус</th>
-              <td>Гречка</td>
+              <th class="table__desc">Вкус</th>
+              <td class="table__desc">Гречка</td>
             </tr>
             <tr>
-              <th>Цена</th>
-              <td>700 Р.</td>
+              <th class="table__desc">Цена</th>
+              <td class="table__desc">700 Р.</td>
             </tr>
 
           </table>
 
-          <a href="#" class="button">заказать</a>
+          <a href="#" class="card__button button">заказать</a>
 
         </div>
 
@@ -199,29 +199,29 @@
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 500 г</caption>
             <tr>
-              <th>Масса</th>
-              <td>500 г</td>
+              <th class="table__desc">Масса</th>
+              <td class="table__desc">500 г</td>
             </tr>
             <tr>
-              <th>Вкус</th>
-              <td>Рис</td>
+              <th class="table__desc">Вкус</th>
+              <td class="table__desc">Рис</td>
             </tr>
             <tr>
-              <th>Цена</th>
-              <td>500 Р.</td>
+              <th class="table__desc">Цена</th>
+              <td class="table__desc">500 Р.</td>
             </tr>
 
           </table>
 
-          <a href="#" class="button">заказать</a>
+          <a href="#" class="card__button button">заказать</a>
 
         </div>
 
-        <div class="card">
-          <span class="card__add-link"></span>
-          <p class="card__subtitle">Показать еще 100500 товаров</p>
-          <p class="card__desc">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="button button-allproduct">показать все</a>
+        <div class="card-add">
+          <a href="#" class="card-add__link"></a>
+          <p class="card-add__subtitle">Показать еще 100500 товаров</p>
+          <p class="card-add__desc">На самом деле вкусов гораздо больше!</p>
+          <a href="#" class="button button--light">показать все</a>
 
         </div>
 
@@ -232,70 +232,73 @@
 
     <section class="addition">
 
-      <h2 class="additon-title">Дополнительные товары</h2>
+      <h2 class="addition-title">Дополнительные товары</h2>
 
       <div class="addition__card">
-        <table class="addition__table">
-          <caption class="addition__title">Сахарозаменитель</caption>
-          <tr>
-            <th>1 упаковка (100 г)</th>
-            <td>200 Р.</td>
-          </tr>
-        </table>
-        <a href="#" class="button">заказать</a>
+        <h3 class="addition__title">Сахарозаменитель</h3>
+        <ul class="addition__list">
+          <li>
+            <p class="addition__desc">1 упаковка (100 г)</p>
+          </li>
+          <li>
+            <p class="addition__desc">200 Р.</p>
+          </li>
+
+        </ul>
+
+        <a href="#" class=" addition__button button">заказать</a>
       </div>
 
       <div class="addition__card">
-        <table class="addition__table">
-          <caption class="addition__title">питьевая вода</caption>
-          <tr>
-            <th>5 литро</th>
-            <td>50 Р.</td>
-          </tr>
-        </table>
+        <h3 class="addition__title">питьевая вода</h3>
+        <ul class="addition__list">
+          <li>
+            <p class="addition__desc">5 литров</p>
+          </li>
+          <li>
+            <p class="addition__desc">50 Р.</p>
+          </li>
+        </ul>
+        <a href="#" class=" addition__button button">заказать</a>
       </div>
 
       <div class="addition__card">
-        <table class="addition__table">
-          <caption class="addition__title">молоко</caption>
-          <tr>
-            <th>1 литр</th>
-            <td>100 Р.</td>
-          </tr>
-        </table>
-        <a href="#" class="button">заказать</a>
+        <h3 class="addition__title">молоко</h3>
+        <ul class="addition__list">
+          <li>
+            <p class="addition__desc">1 литр</p>
+          </li>
+          <li>
+            <p class="addition__desc">100 Р.</p>
+          </li>
+        </ul>
+        <a href="#" class=" addition__button button">заказать</a>
       </div>
 
       <div class="addition__card">
-        <table class="addition__table">
-          <caption class="addition__title">витамины</caption>
-          <tr>
-            <th>1 упаковка(30 г)
-            </th>
-            <td>300 Р.</td>
-          </tr>
-        </table>
-        <a href="#" class="button">заказать</a>
-
-
         <h3 class="addition__title">витамины</h3>
-        <p class="addition__desc">1 упаковка (30 г)</p>
-        <p class="addition__desc">300 Р.</p>
-        <a href="#" class="button">заказать</a>
+        <ul class="addition__list">
+          <li>
+            <p class="addition__desc">1 упаковка (30 г)</p>
+          </li>
+          <p class="addition__desc">300 Р.</p>
+          </li>
+        </ul>
+        <a href="#" class=" addition__button button">заказать</a>
       </div>
 
       <div class="addition__gift">
-        <h3 class="addition__title">Закажите все
+        <a href="#" class="addition__link"></a>
+        <h3 class="addition__title-gift">Закажите все
           и получите чехол для
           кота в подарок!</h3>
       </div>
 
     </section>
 
-    <div class="invite">
+    <div class="invite invite-bg">
       <p class="invite__title">приглашаем к сотрудничеству дилеров!</p>
       <p class="invite__desc">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-
     </div>
 
     <div class="location">
@@ -316,7 +319,7 @@
     <ul class="social">
 
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">в контакте.</span>
         </a>
       </li>
@@ -328,7 +331,7 @@
       </li>
 
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+        <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
           <span class="visually-hidden">втелеграмм.</span>
         </a>
       </li>

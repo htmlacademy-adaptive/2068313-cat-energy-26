@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,10 +15,8 @@
 
     <a class="main-header__logo">
       <img src="img/logo-img.svg" width="33" height="37" alt="Картинка кота.">
-    </a>
 
-    <a class="main-header__logo">
-      <img src="img/logo-title.svg" width="101" height="18" alt="Cat energy.">
+      <img class="main-header__logo-text" src="img/logo-title.svg" width="101" height="18" alt="Cat energy.">
     </a>
 
     <nav class="nav">
@@ -30,16 +29,16 @@
 
         <ul class="nav__list">
 
-          <li class="nav-list__item nav-list__item--active">
-            <a href="index.html">Главная</a>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
 
-          <li class="nav-list__item">
-            <a href="catalog.html">каталог продукции</a>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">каталог продукции</a>
           </li>
 
-          <li class="nav-list__item">
-            <a href="form.html">подбор программы</a>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">подбор программы</a>
           </li>
 
         </ul>
@@ -52,12 +51,12 @@
 
   <main class="main-container form">
     <h1 class="form__title">Подбор программы</h1>
-    <p class="form__desc">Заполните анкету, и мы подберем
+    <p class="form__desc">Заполните анкету, и мы подберем<br>
       программу питания для вашего кота</p>
 
     <form action="https://echo.htmlacademy.ru/" method="get">
 
-      <fieldset>
+      <fieldset class="field-user">
         <label class="input-desc">
           ИМЯ:*
           <input type="email" placeholder="барсик">
@@ -72,36 +71,34 @@
         </label>
       </fieldset>
 
-      <fieldset>
-        <label class="input-desc">
-          <input type="radio" name="slim" value="slim" checked>
-          похудение
-        </label>
-        <label class="input-desc">
-          <input type="radio" name="mass" value="mass">
-          Набор массы
-        </label>
-        <label class="input-desc">
-          <input type="radio" name="und" value="und">
-          Не знаю (Нужен ваш совет)
-        </label>
+      <fieldset class="field-radio">
+
+        <input class="input-radio" id="reduce" type="radio" name="radio" value="slim" checked>
+        <label class="input-desc" for="reduce"><span class="radio-bg"></span>похудение</label>
+
+        <input class="input-radio" id="mass" type="radio" name="radio" value="mass">
+        <label class="input-desc" for="mass"><span class="radio-bg"></span>Набор массы</label>
+
+        <input class="input-radio" id="und" type="radio" name="radio" value="und">
+        <label class="input-desc" for="und"><span class="radio-bg"></span>Не знаю (Нужен ваш совет)</label>
+
       </fieldset>
 
-      <fieldset>
-        <legend class="legend-title">
+      <fieldset class="field-contact">
+        <legend class="legend-title-contact">
           Контактные данные (владельца кота)
         </legend>
-        <label class="input-desc">
+        <label class="input-desc input-email">
           E-mail:*
           <input type="email" placeholder="kuklachev@gmail.com">
         </label>
-        <label class="input-desc">
+        <label class="input-desc input-tel">
           Телефон:*
           <input type="tel" placeholder="8 (960) 900-60-90">
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="field-comment">
         <legend class="legend-title">
           Комментарий
         </legend>
@@ -111,39 +108,34 @@
         </label>
       </fieldset>
 
+      <fieldset class="field-addition">
 
-      <fieldset>
         <legend class="legend-title">
           Дополнительно
         </legend>
-        <label class="input-desc">
-          <input type="checkbox" name="shugar" value="shugar" checked>
-          сахарозаменитель
-        </label>
-        <label class="input-desc">
-          <input type="checkbox" name="water" value="water">
-          питьевая вода
-        </label>
-        <label class="input-desc">
-          <input type="checkbox" name="milk" value="milk">
-          молоко
-        </label>
-        <label class="input-desc">
-          <input type="checkbox" name="vitamins" value="vitamins">
-          витамины
-        </label>
+
+        <input type="checkbox" class="input-checkbox" id="shugar" name="shugar" value="shugar" checked>
+        <label class="input-desc" for="shugar"><span class="checkbox-bg"></span>сахарозаменитель</label>
+
+        <input type="checkbox" class="input-checkbox" id="water" name="water" value="water">
+        <label class="input-desc" for="water"><span class="checkbox-bg"></span>питьевая вода</label>
+
+        <input type="checkbox" class="input-checkbox" id="milk" name="milk" value="milk">
+        <label class="input-desc" for="milk"><span class="checkbox-bg"></span>молоко</label>
+
+        <input type="checkbox" class="input-checkbox" id="vitamins" name="vitamins" value="vitamins">
+        <label class="input-desc" for="vitamins"><span class="checkbox-bg"></span>витамины</label>
 
       </fieldset>
 
       <button class="button form-button" type="submit">отправить заявку</button>
-      <p class="form__desc">* — Обязательные поля</p>
+      <p class="form__desc form__desc-bottom">* — Обязательные поля</p>
 
     </form>
 
-    <div class="invite">
+    <div class="invite invite-bg">
       <p class="invite__title">приглашаем к сотрудничеству дилеров!</p>
       <p class="invite__desc">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-
     </div>
 
     <div class="location">
@@ -164,7 +156,7 @@
     <ul class="social">
 
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">в контакте.</span>
         </a>
       </li>
@@ -176,7 +168,7 @@
       </li>
 
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+        <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
           <span class="visually-hidden">втелеграмм.</span>
         </a>
       </li>
