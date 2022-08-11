@@ -6,7 +6,7 @@
 
 body {
   margin: 0 auto;
-  font-family: $font, "Arial";
+  font-family: $font, "Arial", $font-fallback;
   background: $color-body-bg;
 }
 
