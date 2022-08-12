@@ -2,6 +2,16 @@
   width: 100%;
   padding: 0 20px;
   background: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, #ffffff 55%, #eaeaea 55%, #eaeaea 45%);
+  }
+}
+
+.example__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .example__title {
@@ -9,6 +19,11 @@
   font-size: 36px;
   line-height: 40px;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__desc {
@@ -17,20 +32,53 @@
   line-height: 18px;
   color: $color-txt-gray;
   font-family: "Arial";
+
+  @media (min-width: $tablet-width) {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.expenses {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .example__subtitle {
   font-weight: 400;
   font-size: 14px;
+  padding-right: 5px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+}
 
 .result {
   display: flex;
   gap: 30px;
+  position: relative;
 }
 
 .result__weight {
@@ -54,6 +102,12 @@
   width: 124px;
   height: 70px;
   border: 1px solid  #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    text-align: center;
+  }
 }
 
 .result__title-days {
@@ -61,6 +115,8 @@
 }
 
 .result__subtitle {
+  font-family: 'Arial';
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -70,31 +126,31 @@
   text-align: center;
   background: #eaeaea;
   margin-top: -38px;
+
+  @media (min-width: $tablet-width) {
+    background: #ffffff;
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 14px;
+    white-space: nowrap;
+    width: auto;
+    margin-top: -32px;
+    padding: 0 8px;
+  }
 }
 
 .slider {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .slider__img {
   width: 100%;
   height: 100%;
+  padding-bottom: 40px;
+  max-width: 560px;
+  max-height: 512px;
 }
 
-.slider__range {
-  display: flex;
-}
-
-.slider__desc {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.slider__input {
-  margin: 8px 15px;
-  width: 85px;
-}

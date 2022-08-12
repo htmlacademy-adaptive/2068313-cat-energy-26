@@ -1,9 +1,14 @@
 .footer-page {
-  padding: 0;
-  margin: 0 20px;
+  padding: 0 20px;
+  background: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer-page__logo {
@@ -20,6 +25,12 @@
   justify-content: space-between;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    justify-content: stretch;
+    width: auto;
+  }
 }
 
 .social__link::before {
@@ -27,22 +38,29 @@
   display: block;
   width: 28px;
   height: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
 }
 
 .social__link {
   &--vk::before {
     background: url(../img/icons/vk.svg);
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--youtube::before {
     background: url(../img/icons/youtube.svg);
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--tg::before {
     background: url(../img/icons/telegramm.svg);
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -52,6 +70,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: stretch;
+    width: auto;
+  }
 }
 
 .copyright__icon {
@@ -65,9 +88,15 @@
 }
 
 .copyright__link {
+  font-family: 'Arial';
+  font-style: normal;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $color-txt-gray;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 15px;
+  }
 }

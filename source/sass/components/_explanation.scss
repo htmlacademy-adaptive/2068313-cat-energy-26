@@ -2,18 +2,58 @@
   padding: 0 20px;
 }
 
+.explanation__content {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding: 0;
+    row-gap: 30px;
+    counter-reset: li-counter;
+  }
+}
+
 .explanation__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .explanation__item {
   height: 80px;
+  position: relative;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    height: 280px;
+    width: 230px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+}
+
+.explanation__item::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: li-counter;
+    content: counter(li-counter);
+    color: #f2f2f2;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .explanation__desc {
-  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -23,6 +63,13 @@
   margin-left: 40px;
   padding-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   &::before {
     content: "";
     display: inline-block;
@@ -31,22 +78,31 @@
     padding: 20px;
     position: absolute;
     top: 0;
-    left: -80px;
+    left: -40px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 15%;
+      left: 0;
+    }
   }
 
   &--leaf::before {
-    background-image: url(../img/icons/leaf.png);
+    background-image: url(../img/icons/leaf.svg);
   }
 
   &--powder::before {
-    background-image: url(../img/icons/powder.png);
+    background-image: url(../img/icons/powder.svg);
   }
 
   &--food::before {
-    background-image: url(../img/icons/food.png);
+    background-image: url(../img/icons/food.svg);
   }
 
   &--clock::before {
-    background-image: url(../img/icons/clock.png);
+    background-image: url(../img/icons/clock.svg);
   }
 }

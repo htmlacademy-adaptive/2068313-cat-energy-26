@@ -1,5 +1,11 @@
 .invite {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 70px;
+  }
 }
 
 .invite__title {
@@ -10,15 +16,29 @@
   text-transform: uppercase;
   color: #111111;
   width: 139px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .invite__desc {
+  font-family: 'Arial';
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: right;
   color: $color-txt-gray;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+  }
 }
 
 .location {
