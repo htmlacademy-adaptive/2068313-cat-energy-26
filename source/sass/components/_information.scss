@@ -10,6 +10,30 @@
   background-color: $color-bg-block;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding: 53px;
+    position: relative;
+  }
+}
+
+.programm__img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 10%;
+    bottom: 22%;
+    width: 200px;
+    height: 213px;
+  }
+}
+
+.programm__img-panter {
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    width: 268px;
+    right: 5%;
+  }
 }
 
 .programm__title {
@@ -21,6 +45,10 @@
   line-height: 37px;
   padding-left: 19px;
   padding-top: 10px;
+
+  @media ( min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .programm__desc {
@@ -39,10 +67,20 @@
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color:#d9d9d9;
+    background-color: #d9d9d9;
     position: absolute;
     bottom: -10%;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -69,5 +107,15 @@
     position: absolute;
     top: 75%;
     margin-left: 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 70%;
+      margin-left: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
