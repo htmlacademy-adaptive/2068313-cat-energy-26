@@ -63,6 +63,17 @@
   }
 }
 
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
+}
+
 .copyright {
   width: 100%;
   position: relative;

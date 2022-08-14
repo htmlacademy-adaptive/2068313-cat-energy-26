@@ -194,6 +194,10 @@ textarea {
 
 .invite-bg {
   background: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    background: #ffffff;
+  }
 }
 
 // inputs icons
