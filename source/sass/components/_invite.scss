@@ -1,13 +1,18 @@
 .invite {
-  padding: 0 20px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 45px 70px;
   }
-  @media (min-width: $tablet-width) {
-    display: none !important;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    height: 198px;
+    background-color: #ffffff;
+    margin-left: calc((100vh - 400px) / 2);
+    margin-top: 100px;
+    z-index: 99;
+    position: absolute;
   }
 }
 

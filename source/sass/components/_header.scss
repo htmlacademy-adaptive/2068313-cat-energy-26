@@ -5,11 +5,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 20px;
+  padding: 40px 20px;
 
-  @media (min-width: $desktop-width) {
-    padding: 20px 110px;
-  }
 }
 
 .main-header__logo {
@@ -23,11 +20,39 @@
 
     @media (min-width: $tablet-width) {
       left: 120px;
+      display: none;
     }
 
     @media (min-width: $desktop-width) {
       left: 200px;
     }
+  }
+
+  &-img {
+    display: inline-block;
+    background: url(../img/icons/logo-img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 120px;
+    background: url(../img/icons/logo-middle.svg);
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url(../img/icons/logo-big.svg);
+    width: 202px;
+    height: 60px;
   }
 }
 
@@ -102,12 +127,16 @@
   }
 }
 
-.nav__item--active {
+.nav__item--active-index {
   border-bottom: 2px solid $color-bg-item;
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid #ffffff;
   }
+}
+
+.nav__item--active {
+  border-bottom: 2px solid $color-bg-item;
 }
 
 .nav__link {
@@ -139,7 +168,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: #ffffff;
     font-size: 20px;
     line-height: 40px;
   }

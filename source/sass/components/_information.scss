@@ -1,12 +1,10 @@
 .information {
   margin-top: 20px;
-  padding: 0 20px;
   display: grid;
   gap: 20px;
 
   @media (min-width: $desktop-width) {
     margin-top: 80px;
-    padding: 0 110px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
@@ -133,7 +131,7 @@
     display: inline-block;
     background-image: url(../img/icons/arrow.svg);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 30px; //TODO: подобрать ширину
     height: 12px;
     position: absolute;
     top: 75%;
