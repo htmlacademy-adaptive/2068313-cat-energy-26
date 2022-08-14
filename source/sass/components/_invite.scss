@@ -6,6 +6,9 @@
     justify-content: space-between;
     padding: 45px 70px;
   }
+  @media (min-width: $tablet-width) {
+    display: none !important;
+  }
 }
 
 .invite__title {

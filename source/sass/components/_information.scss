@@ -3,6 +3,14 @@
   padding: 0 20px;
   display: grid;
   gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .programm {
@@ -26,6 +34,12 @@
     width: 200px;
     height: 213px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    height: 106px;
+    width: 100px;
+  }
 }
 
 .programm__img-panter {
@@ -33,6 +47,11 @@
     height: 200px;
     width: 268px;
     right: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
   }
 }
 
@@ -46,8 +65,16 @@
   padding-left: 19px;
   padding-top: 10px;
 
-  @media ( min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 85px;
+    left: 230px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -81,6 +108,10 @@
     width: 340px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
