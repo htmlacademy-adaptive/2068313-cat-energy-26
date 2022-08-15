@@ -4,15 +4,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 30px 20px;
+    margin-top: 20px;
   }
 }
 

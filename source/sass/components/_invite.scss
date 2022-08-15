@@ -17,6 +17,8 @@
 }
 
 .invite__title {
+  padding: 15px 0;
+  padding-right: 40px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -38,7 +40,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: right;
+  text-align: left;
   color: $color-txt-gray;
   display: none;
 
@@ -46,6 +48,10 @@
     font-size: 14px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 

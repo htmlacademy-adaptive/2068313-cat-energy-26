@@ -11,7 +11,7 @@
 
 <body>
 
-  <header class="main-header">
+  <header class="main-header container">
 
     <a href="index.html" class="main-header__logo">
       <span class="main-header__logo-img"></span>
@@ -50,13 +50,13 @@
   </header>
 
   <main class="main-container form">
-    <h1 class="form__title">Подбор программы</h1>
+    <h1 class="form__title container">Подбор программы</h1>
     <p class="form__desc">Заполните анкету, и мы подберем<br>
       программу питания для вашего кота</p>
 
     <form action="https://echo.htmlacademy.ru/" method="get">
 
-      <fieldset class="field-user">
+      <fieldset class="field-user container">
         <label class="input-desc">
           ИМЯ:*
           <input type="email" placeholder="барсик">
@@ -71,7 +71,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="field-radio">
+      <fieldset class="field-radio container">
 
         <input class="input-radio" id="reduce" type="radio" name="radio" value="slim" checked>
         <label class="input-desc" for="reduce"><span class="radio-bg"></span>похудение</label>
@@ -84,7 +84,7 @@
 
       </fieldset>
 
-      <fieldset class="field-contact">
+      <fieldset class="field-contact container">
         <legend class="legend-title-contact">
           Контактные данные (владельца кота)
         </legend>
@@ -98,7 +98,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="field-comment">
+      <fieldset class="field-comment container">
         <legend class="legend-title">
           Комментарий
         </legend>
@@ -108,7 +108,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="field-addition">
+      <fieldset class="field-addition container">
 
         <legend class="legend-title">
           Дополнительно
@@ -128,8 +128,10 @@
 
       </fieldset>
 
-      <button class="button form-button" type="submit">отправить заявку</button>
-      <p class="form__desc form__desc-bottom">* — Обязательные поля</p>
+      <div class="for-users">
+        <button class="button form-button" type="submit">отправить заявку</button>
+        <p class="form__desc form__desc-bottom">* — Обязательные поля</p>
+      </div>
 
     </form>
 
@@ -141,13 +143,13 @@
     <div class="location">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.61969609936!2d30.329148!3d59.937868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee3abe449bc142d7!2z0JzQuNGF0LDQudC70L7QstGB0LrQuNC5INGC0LXQsNGC0YA!5e0!3m2!1sru!2s!4v1658948780658!5m2!1sru!2s"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
   </main>
 
-  <footer class="footer-page">
+  <footer class="footer-page container">
 
     <a class="footer-page__logo">
       <img src="img/icons/logo-title.svg" width="128" height="24" alt="Картинка кота.">
