@@ -70,9 +70,9 @@
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 
-  &:focus {
-    background-image: url(../img/icons/Logo_mobile-close.svg);
-  }
+  // &:focus {
+  //   background-image: url(../img/icons/Logo_mobile-close.svg);
+  // }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -99,6 +99,10 @@
   @media (min-width: $desktop-width) {
     min-width: 500px;
   }
+}
+
+.nav__wrapper-active {
+  display: block;
 }
 
 .nav__list {
@@ -178,10 +182,10 @@
   }
 }
 
-.nav__toggle:hover,
-.nav:focus-within > .nav__wrapper {
-  display: flex;
-}
+// .nav__toggle:hover,
+// .nav:focus-within > .nav__wrapper {
+//   display: flex;
+// }
 
 .nav {
   background: none;
