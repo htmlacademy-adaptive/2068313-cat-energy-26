@@ -7,7 +7,6 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -52,24 +51,22 @@
 
   <main class="main-container">
 
-    <article class="article">
+    <article class="article container">
       <h1 class="article__title">Функциональное<br> питание для котов</h1>
       <p class="article__desc">Занялся собой? Займись котом!</p>
 
-      
-    </article>
+      <div class="poster">
+        <img class="poster__img" src="img/poster.png" alt="банка с едой?." width="280" height="270">
+        <a href="form.html" class="button poster-button">подобрать программу</a>
+      </div>
 
-    <div class="poster container">
-      <img class="poster__img" src="img/poster.png" alt="банка с едой?." width="280" height="270">
-      <a href="form.html" class="button poster-button">подобрать программу</a>
-    </div>
+    </article>
 
     <section class="information container">
 
       <div class="programm">
 
-        <img src="img/icons/cat_back.svg" alt="черный кот." class="programm__img" width="50" height="53">
-        <h3 class="programm__title">похудение</h3>
+        <h3 class="programm__title programm__title-cat">похудение</h3>
         <p class="programm__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
           диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a href="catalog.html" class="programm__link">каталог slim</a>
@@ -78,9 +75,7 @@
 
       <div class="programm">
 
-        <img src="img/icons/panter_back.svg" alt="черный пантера." class="programm__img programm__img-panter" width="67"
-          height="50">
-        <h3 class="programm__title">Набор массы</h3>
+        <h3 class="programm__title programm__title-panter">Набор массы</h3>
         <p class="programm__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
           вашему коту нарастить необходимые мышцы!</p>
         <a href="catalog.html" class="programm__link">каталог pro</a>
@@ -119,7 +114,7 @@
 
     </section>
 
-    <section class="example">
+    <section class="example container">
 
       <h2 class="example__title">Живой пример</h2>
       <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
