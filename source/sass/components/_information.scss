@@ -131,11 +131,14 @@
     display: inline-block;
     background-image: url(../img/icons/arrow.svg);
     background-repeat: no-repeat;
-    width: 30px; //TODO: подобрать ширину
+    background-position: center;
+    background-size: 100%;
+    width: 24px;
     height: 12px;
     position: absolute;
     top: 75%;
     margin-left: 17px;
+    transition: width, 0.3s;
 
     @media (min-width: $tablet-width) {
       top: 70%;
@@ -146,5 +149,17 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.programm__link:hover::after {
+  width: 32px;
+}
+
+.programm__link:active {
+  opacity: 0.3;
+
+  &::after {
+    opacity: 0.3;
   }
 }
