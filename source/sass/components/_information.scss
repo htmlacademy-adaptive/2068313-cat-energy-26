@@ -1,8 +1,14 @@
 .information {
   margin-top: 20px;
-  padding: 0 20px;
   display: grid;
   gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .programm {
@@ -10,6 +16,41 @@
   background-color: $color-bg-block;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding: 53px;
+    position: relative;
+  }
+}
+
+.programm__img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 10%;
+    bottom: 22%;
+    width: 200px;
+    height: 213px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    height: 106px;
+    width: 100px;
+  }
+}
+
+.programm__img-panter {
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    width: 268px;
+    right: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+  }
 }
 
 .programm__title {
@@ -21,6 +62,18 @@
   line-height: 37px;
   padding-left: 19px;
   padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 85px;
+    left: 230px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programm__desc {
@@ -39,10 +92,24 @@
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color:#d9d9d9;
+    background-color: #d9d9d9;
     position: absolute;
     bottom: -10%;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -64,10 +131,20 @@
     display: inline-block;
     background-image: url(../img/icons/arrow.svg);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 30px; //TODO: подобрать ширину
     height: 12px;
     position: absolute;
     top: 75%;
     margin-left: 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 70%;
+      margin-left: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

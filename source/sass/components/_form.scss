@@ -1,25 +1,42 @@
 .form {
   overflow: hidden;
+  position: relative;
 }
 
 .form__title {
   margin: 0;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 100%;
   color: $color-txt-black;
-  padding: 0 20px;
   border-top: 1px solid #d9d9d9;
   padding-top: 27px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    font-size: 60px;
+    margin: 40px 0;
+  }
 }
 
 .form__desc {
+  padding: 0 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $color-txt-black;
-  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-bottom: 40px;
+  }
 }
 
 .field-user {
@@ -28,11 +45,20 @@
   border: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 680px;
+    padding: 0 110px;
+  }
 }
 
 .field-radio {
   padding: 0;
-  margin: 0;
   padding-top: 22px;
   padding-bottom: 22px;
   border: none;
@@ -40,9 +66,24 @@
   flex-direction: column;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 570px;
+    height: 206px;
+    position: absolute;
+    top: 285px;
+    left: calc((100vh + 850px) / 2);
+  }
 }
 
 .input-desc {
+  white-space: nowrap;
   font-family: $font;
   font-weight: 400;
   font-size: 16px;
@@ -52,9 +93,16 @@
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-input[type=text], input[type=email], input[type=tel] {
+input[type=text],
+input[type=email],
+input[type=tel] {
   padding: 14px;
   border: 1px solid #e7e7e7;
   width: 100%;
@@ -67,12 +115,44 @@ input[type=text], input[type=email], input[type=tel] {
   text-transform: uppercase;
   color: $color-txt-gray;
   margin-left: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field-contact {
+  position: relative;
   border: none;
-  padding: 0 20px;
+  margin: 0;
   width: 100%;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 2000px;
+    background-color: $color-bg-item;
+    position: absolute;
+    top: -72px;
+    left: 20px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: -78px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title title"
+      "email tel";
+    column-gap: 78px;
+  }
 }
 
 .legend-title {
@@ -83,21 +163,19 @@ input[type=text], input[type=email], input[type=tel] {
   color: #000000;
   padding-top: 26px;
   padding-bottom: 35px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #ffffff;
   position: relative;
 
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    background-color: $color-bg-item;
-    position: absolute;
-    top: 48%;
-    left: 120%;
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .legend-title-contact {
+  width: 195px;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -105,17 +183,16 @@ input[type=text], input[type=email], input[type=tel] {
   color: #000000;
   padding-top: 26px;
   padding-bottom: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #ffffff;
   position: relative;
 
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 2px;
-    background-color: $color-bg-item;
-    position: absolute;
-    top: 35%;
-    left: 90%;
+  @media (min-width: $tablet-width) {
+    width: 540px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 30px 0;
   }
 }
 
@@ -132,6 +209,10 @@ input[type=text], input[type=email], input[type=tel] {
     top: 35%;
     right: 5%;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-area: email;
+  }
 }
 
 .input-tel {
@@ -147,15 +228,35 @@ input[type=text], input[type=email], input[type=tel] {
     top: 30%;
     right: 5%;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-area: tel;
+  }
 }
 
 .field-comment {
   border: none;
-  padding: 0 20px;
+  position: relative;
+  margin: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 2000px;
+    background-color: $color-bg-item;
+    position: absolute;
+    top: -47px;
+    left: 20px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
+  }
 }
 
 textarea {
-  padding: 10px;
   width: 100%;
   border: 1px solid #e7e7e7;
 
@@ -166,34 +267,115 @@ textarea {
     line-height: 18px;
     text-transform: uppercase;
     color: #444444;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
 .field-addition {
   margin: 0;
-  padding: 0 20px;
   border: none;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 2000px;
+    background-color: $color-bg-item;
+    position: absolute;
+    top: -47px;
+    left: 20px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      left: -30px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: end;
+  }
 }
 
 .form-button {
+  margin: 0 auto;
   font-family: $font;
-  margin: 10px 20px;
   border: none;
-  width: 260px;
+  max-width: 400px;
+
+  @media (min-width: $tablet-width) {
+    margin: 10px;
+    margin-right: 60px;
+    max-width: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 52px;
+    max-width: 570px;
+  }
 }
 
 .form__desc-bottom {
   text-align: center;
 }
 
+.for-users {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 30px;
+    margin: 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin: 40px 0;
+  }
+}
+
 .invite__desc {
   display: block;
+  width: 170px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
 }
 
 .invite-bg {
+  padding: 0 20px;
   background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: #ffffff;
+  }
 }
 
 // inputs icons
@@ -219,6 +401,11 @@ textarea {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
 
     &::before {
       content: "";

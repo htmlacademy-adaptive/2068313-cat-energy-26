@@ -1,9 +1,24 @@
 .article {
   padding: 20px;
   min-height: 320px;
+  max-width: 1440px;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat.jpg);
   background-repeat: no-repeat;
   background-size: 100% 320px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 690px;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat-big.jpg);
+    background-position: left calc(( 100% - 1220px ) / 2 + 720px) top;
+    background-repeat: no-repeat;
+    // background-size: 720px 690px, auto 690px;
+    background-size: 100% auto;
+    margin-top: -130px;
+  }
 }
 
 .article__title {
@@ -14,6 +29,21 @@
   font-size: 32px;
   line-height: 36px;
   color: $color-txt-white;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-txt-black;
+    text-align: left;
+    padding-left: 70px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 120px;
+    padding-top: 150px;
+  }
 }
 
 .article__desc {
@@ -23,15 +53,60 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-txt-white;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-txt-black;
+    text-align: left;
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+    padding-left: 120px;
+  }
 }
 
 .poster {
-  margin-left: 20px;
-  margin-right: 20px;
+  position: relative;
+}
 
-  .poster__img {
-    margin-top: -120px;
-    width: 100%;
-    height: 100%;
+.poster__img {
+  margin-top: -120px;
+  min-width: 250px;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -100px;
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -480px;
+    left: 39%;
+  }
+}
+
+.poster-button {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+    position: absolute;
+    left: 70px;
+    top: -80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -280px;
+    left: 120px;
   }
 }

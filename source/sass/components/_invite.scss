@@ -1,8 +1,24 @@
 .invite {
-  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    height: 198px;
+    background-color: #ffffff;
+    margin-left: calc((100vh - 250px) / 2);
+    margin-top: 100px;
+    z-index: 99;
+    position: absolute;
+  }
 }
 
 .invite__title {
+  padding: 15px 0;
+  padding-right: 40px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -10,15 +26,33 @@
   text-transform: uppercase;
   color: #111111;
   width: 139px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .invite__desc {
+  font-family: 'Arial';
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: right;
+  text-align: left;
   color: $color-txt-gray;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .location {
