@@ -5,19 +5,19 @@
   height: 100%;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat.jpg);
   background-repeat: no-repeat;
-  background-size: auto 320px;
+  background-size: auto 430px;
   background-position: center top;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     background: none;
-    min-height: 600px;
+    min-height: 800px;
     margin-top: 40px;
     padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 600px;
+    min-height: 600px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
     background-position: right top;
     background-repeat: no-repeat;
