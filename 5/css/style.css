@@ -20,7 +20,7 @@
 
 body {
   margin: 0 auto;
-  font-family: "oswald", "Arial", "sans-serif";
+  font-family: "oswald", "Arial", sans-serif;
   background: #ffffff;
 }
 
@@ -87,26 +87,6 @@ body {
 }
 .button--light:active {
   color: rgba(68, 68, 68, 0.3);
-}
-
-.slider__range {
-  height: 100%;
-  width: 4px;
-  background: #666666;
-  border-radius: 2px;
-  position: absolute;
-}
-.slider__range::after {
-  content: "";
-  display: inline-block;
-  cursor: pointer;
-  background: url(../img/icons/slider-button.svg);
-  width: 40px;
-  height: 40px;
-  color: #666666;
-  position: absolute;
-  top: 45%;
-  right: -18px;
 }
 
 .main-header {
@@ -1047,6 +1027,26 @@ body {
   }
 }
 
+.slider__range {
+  height: 100%;
+  width: 4px;
+  background: #666666;
+  border-radius: 2px;
+  position: absolute;
+}
+.slider__range::after {
+  content: "";
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/icons/slider-button.svg);
+  width: 40px;
+  height: 40px;
+  color: #666666;
+  position: absolute;
+  top: 45%;
+  right: -18px;
+}
+
 @media (min-width: 768px) {
   .invite {
     display: flex;
@@ -1243,18 +1243,12 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
-  padding-left: 20px;
 }
 @media (min-width: 768px) {
   .catalog-title {
     font-size: 60px;
     margin-bottom: 70px;
-    padding-left: 60px;
-  }
-}
-@media (min-width: 1280px) {
-  .catalog-title {
-    padding-left: 110px;
+    padding-top: 50px;
   }
 }
 
