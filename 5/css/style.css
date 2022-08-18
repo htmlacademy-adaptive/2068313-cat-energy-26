@@ -104,6 +104,7 @@ body {
 
 .main-header__logo {
   padding: 10px 0;
+  /*stylelint-disable */
 }
 .main-header__logo-text {
   position: absolute;
@@ -195,6 +196,7 @@ body {
   }
 }
 
+/* stylelint-enable */
 .nav__wrapper {
   position: absolute;
   width: 100%;
@@ -323,6 +325,7 @@ body {
   background: none;
 }
 
+/*stylelint-disable */
 .article {
   position: relative;
   padding: 20px;
@@ -365,6 +368,7 @@ body {
     z-index: -10;
   }
 }
+/*stylelint-enable */
 @media (min-width: 1280px) {
   .article::before {
     content: "";
@@ -511,6 +515,7 @@ body {
   }
 }
 
+/*stylelint-disable */
 .programm__title {
   position: relative;
   margin: 0;
@@ -599,6 +604,7 @@ body {
   }
 }
 
+/*stylelint-enable */
 .programm__desc {
   position: relative;
   margin: 0;
@@ -638,6 +644,7 @@ body {
   }
 }
 
+/*stylelint-disable */
 .programm__link {
   position: relative;
   display: inline-block;
@@ -678,6 +685,7 @@ body {
   }
 }
 
+/*stylelint-enable */
 .programm__link:hover::after {
   width: 32px;
 }
@@ -747,6 +755,7 @@ body {
   }
 }
 
+/*stylelint-disable */
 .explanation__desc {
   font-weight: 400;
   font-size: 14px;
@@ -798,6 +807,7 @@ body {
   background-image: url(../img/icons/clock.svg);
 }
 
+/*stylelint-enable */
 .example {
   width: 100%;
   margin: 0 auto;
@@ -1027,6 +1037,7 @@ body {
   }
 }
 
+/*stylelint-disable */
 .slider__range {
   height: 100%;
   width: 4px;
@@ -1047,6 +1058,7 @@ body {
   right: -18px;
 }
 
+/*stylelint-enable */
 @media (min-width: 768px) {
   .invite {
     display: flex;
@@ -1171,6 +1183,7 @@ body {
   }
 }
 
+/*stylelint-disable */
 .social__link--vk::before {
   background: url(../img/icons/vk.svg);
   background-repeat: no-repeat;
@@ -1187,6 +1200,7 @@ body {
   background-position: center;
 }
 
+/*stylelint-enable */
 .footer__copyright {
   display: flex;
   justify-content: space-between;
@@ -1213,6 +1227,7 @@ body {
   }
 }
 
+/*stylelint-disable */
 .copyright__icon {
   display: block;
   width: 27px;
@@ -1223,6 +1238,7 @@ body {
   margin-bottom: 22px;
 }
 
+/*stylelint-enable */
 .copyright__link {
   font-family: "Arial";
   font-style: normal;
@@ -1404,6 +1420,7 @@ body {
   }
 }
 
+/*stylelint-disable */
 .addition__gift {
   width: 100%;
   margin-top: 35px;
@@ -1491,6 +1508,7 @@ body {
   }
 }
 
+/*stylelint-enable */
 .invite {
   display: flex;
 }
@@ -1667,6 +1685,7 @@ body {
   }
 }
 
+/*stylelint-disable */
 .card-add__link {
   display: inline-block;
   background-image: url(../img/icons/plus.svg);
@@ -1684,6 +1703,7 @@ body {
   }
 }
 
+/*stylelint-enable */
 .card-add__subtitle {
   margin: 0;
   margin-top: 23px;
@@ -1822,6 +1842,7 @@ body {
   }
 }
 
+/*stylelint-disable */
 input[type=text],
 input[type=email],
 input[type=tel] {
@@ -1855,6 +1876,7 @@ input[type=tel] {
   }
 }
 
+/*stylelint-enable */
 .field-contact {
   position: relative;
   border: none;
@@ -1930,6 +1952,7 @@ input[type=tel] {
   }
 }
 
+/*stylelint-disable */
 .input-email {
   position: relative;
 }
@@ -1968,6 +1991,7 @@ input[type=tel] {
   }
 }
 
+/*stylelint-enable */
 .field-comment {
   border: none;
   position: relative;
@@ -2112,6 +2136,7 @@ textarea::placeholder {
   }
 }
 
+/*stylelint-disable */
 .input-radio {
   position: absolute;
   z-index: -1;
@@ -2181,4 +2206,6 @@ textarea::placeholder {
   height: 30px;
   margin: 0 10px;
 }
+
+/*stylelint-enable */
 /*# sourceMappingURL=style.css.map */
