@@ -93,6 +93,8 @@
   }
 }
 
+  /*stylelint-disable */
+
 input[type=text],
 input[type=email],
 input[type=tel] {
@@ -119,6 +121,8 @@ input[type=tel] {
     padding: 10px;
   }
 }
+
+  /*stylelint-enable */
 
 .field-contact {
   position: relative;
@@ -193,6 +197,8 @@ input[type=tel] {
   }
 }
 
+  /*stylelint-disable */
+
 .input-email {
   position: relative;
 
@@ -230,6 +236,8 @@ input[type=tel] {
     grid-area: tel;
   }
 }
+
+  /*stylelint-enable */
 
 .field-comment {
   border: none;
@@ -369,6 +377,8 @@ textarea {
 
 // inputs icons
 
+  /*stylelint-disable */
+
 .input-radio {
   position: absolute;
   z-index: -1;
@@ -443,3 +453,4 @@ textarea {
     }
   }
 }
+  /*stylelint-enable */

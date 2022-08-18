@@ -38,6 +38,8 @@
     }
   }
 
+  /*stylelint-disable */
+
   &-img {
     display: inline-block;
     background: url(../img/icons/logo-img.svg);
@@ -105,6 +107,8 @@
     display: none;
   }
 }
+
+  /* stylelint-enable */
 
 .nav__wrapper {
   position: absolute;

@@ -1,3 +1,5 @@
+  /*stylelint-disable */
+
 .article {
   position: relative;
   padding: 20px;
@@ -38,6 +40,8 @@
     z-index: -10;
   }
 }
+
+  /*stylelint-enable */
 
 @media (min-width: $desktop-width) {
   .article::before {

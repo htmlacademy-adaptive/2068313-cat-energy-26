@@ -14,4 +14,3 @@ const openMenu = ()=> {
 }
 
 btnNav.addEventListener('click', openMenu);
-
