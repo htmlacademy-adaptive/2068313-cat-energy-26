@@ -24,63 +24,99 @@
   }
 }
 
-.programm__img {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    right: 10%;
-    bottom: 22%;
-    width: 200px;
-    height: 213px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
-    height: 106px;
-    width: 100px;
-  }
-}
-
-.programm__img-panter {
-  @media (min-width: $tablet-width) {
-    height: 200px;
-    width: 268px;
-    right: 5%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 134px;
-    height: 100px;
-  }
-}
+  /*stylelint-disable */
 
 .programm__title {
+  position: relative;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  padding-left: 19px;
+  padding-left: 80px;
   padding-top: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    position: static;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+  }
+
+  &-cat::before {
+    content: "";
+    display: block;
+    background-image: url(../img/icons/cat_back.svg);
+    width: 50px;
+    height: 53px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     position: absolute;
-    top: 85px;
-    left: 230px;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 213px;
+      top: 50px;
+      left: calc(( 100% + 170px ) / 2);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 106px;
+      top: -25px;
+      left: 0;
+    }
+  }
+
+  &-panter::before {
+    content: "";
+    display: block;
+    background-image: url(../img/icons/panter_back.svg);
+    width: 67px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+      height: 200px;
+      top: 50px;
+      left: calc(( 100% + 150px ) / 2);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 100px;
+      top: -20px;
+      left: 0;
+    }
+  }
+
+
+  @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
+    padding-bottom: 30px;
+    padding-left: 150px;
   }
 }
+
+  /*stylelint-enable */
 
 .programm__desc {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: "Arial";
+  font-family: $font-fallback;
   font-style: normal;
   padding-top: 30px;
   font-weight: 400;
@@ -113,6 +149,8 @@
   }
 }
 
+  /*stylelint-disable */
+
 .programm__link {
   position: relative;
   display: inline-block;
@@ -131,11 +169,14 @@
     display: inline-block;
     background-image: url(../img/icons/arrow.svg);
     background-repeat: no-repeat;
-    width: 30px; //TODO: подобрать ширину
+    background-position: center;
+    background-size: 100%;
+    width: 24px;
     height: 12px;
     position: absolute;
     top: 75%;
     margin-left: 17px;
+    transition: width, 0.3s;
 
     @media (min-width: $tablet-width) {
       top: 70%;
@@ -146,5 +187,19 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+/*stylelint-enable */
+
+.programm__link:hover::after {
+  width: 32px;
+}
+
+.programm__link:active {
+  opacity: 0.3;
+
+  &::after {
+    opacity: 0.3;
   }
 }

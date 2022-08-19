@@ -43,6 +43,8 @@
   }
 }
 
+  /*stylelint-disable */
+
 .social__link {
   &--vk::before {
     background: url(../img/icons/vk.svg);
@@ -62,6 +64,8 @@
     background-position: center;
   }
 }
+
+  /*stylelint-enable */
 
 .footer__copyright {
   display: flex;
@@ -87,6 +91,8 @@
   }
 }
 
+  /*stylelint-disable */
+
 .copyright__icon {
   display: block;
   width: 27px;
@@ -97,8 +103,10 @@
   margin-bottom: 22px;
 }
 
+  /*stylelint-enable */
+
 .copyright__link {
-  font-family: 'Arial';
+  font-family: $font-fallback;
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
