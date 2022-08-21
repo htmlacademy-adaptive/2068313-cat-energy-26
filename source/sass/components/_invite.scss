@@ -2,6 +2,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 45px 70px;
   }
 
@@ -9,7 +10,7 @@
     width: 565px;
     height: 198px;
     background-color: #ffffff;
-    margin-left: calc((100vh - 250px) / 2);
+    left: calc((100vh - 750px) / 2);
     margin-top: 100px;
     z-index: 99;
     position: absolute;
@@ -25,7 +26,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  width: 139px;
+  width: 170px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;

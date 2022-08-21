@@ -7,9 +7,9 @@
   height: 100%;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat.jpg);
   background-repeat: no-repeat;
-  background-size: auto 430px;
+  background-size: auto 320px;
   background-position: center top;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -21,9 +21,9 @@
   @media (min-width: $desktop-width) {
     min-height: 600px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
-    background-position: right top;
+    background-position:calc((100% - 1220px) / 2 + 1082px) 0 ;
     background-repeat: no-repeat;
-    background-size: 720px 570px;
+    background-size: 1044px 540px;
   }
 }
 
@@ -31,39 +31,42 @@
   .article::after {
     content: "";
     display: block;
-    width: 720px;
+    background-repeat: no-repeat;
     height: 690px;
     background-image: url(../img/background-cat-big.jpg);
     position: absolute;
-    top: -120px;
+    top: -150px;
     right: 0;
+    left: calc((100% - 1220px) / 2 + 560px);
     z-index: -10;
   }
 }
-
-  /*stylelint-enable */
 
 @media (min-width: $desktop-width) {
   .article::before {
     content: "";
     display: block;
-    width: 720px;
-    height: 150px;
+    width: 1045px;
+    background-repeat: no-repeat;
+    height: 151px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
     position: absolute;
     top: -150px;
-    bottom: 0;
     right: 0;
-    z-index: -1;
+    left: calc((100% - 1220px) / 2 + 560px);
   }
 }
+
+  /*stylelint-enable */
 
 .article__title {
   padding: 0;
   margin: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
   text-align: center;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 36px;
   color: $color-txt-white;
 
@@ -123,15 +126,17 @@
 
 .poster__img {
   max-width: 350px;
-  width: 100%;
   height: 100%;
   margin: 0 auto;
+  margin-top: -42px;
 
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     max-width: 600px;
     margin-right: auto;
-    margin-left: 80px;
+    margin-top: 0;
+    margin-left: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -139,7 +144,7 @@
     height: 500px;
     position: absolute;
     bottom: 0;
-    left: 28%;
+    left: calc((100% - 1220px) / 2 + 310px);
   }
 }
 
@@ -151,7 +156,19 @@
     line-height: 20px;
     padding: 14px 26px;
     position: absolute;
-    left: 110px;
-    top: 24px;
+    left: 130px;
+    top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+    position: absolute;
+    left: calc((100% - 1220px) / 2 + 70px);
+    top: -200px;
   }
 }
+

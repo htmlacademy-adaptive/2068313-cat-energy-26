@@ -30,16 +30,17 @@
 
         <ul class="nav__list">
 
-          <li class="nav__item nav__item--active-index">
-            <a class="nav__link" href="index.html">Главная</a>
+          <li class="nav__item">
+            <a class="nav__link nav__link--index nav__link--active nav__link--index--active"
+              href="index.html">Главная</a>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link" href="catalog.html">каталог продукции</a>
+            <a class="nav__link nav__link--index" href="catalog.html">каталог продукции</a>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link" href="form.html">подбор программы</a>
+            <a class="nav__link nav__link--index" href="form.html">подбор программы</a>
           </li>
 
         </ul>
@@ -52,13 +53,16 @@
 
   <main class="main-container">
 
-    <article class="article container">
-      <h1 class="article__title">Функциональное<br> питание для котов</h1>
-      <p class="article__desc">Занялся собой? Займись котом!</p>
+    <article class="article">
+      <div class="">
 
-      <div class="poster">
-        <img class="poster__img" src="img/poster.png" alt="банка с едой?." width="280" height="270">
-        <a href="form.html" class="button poster-button">подобрать программу</a>
+        <h1 class="article__title">Функциональное<br> питание для котов</h1>
+        <p class="article__desc">Занялся собой? Займись котом!</p>
+
+        <div class="poster">
+          <img class="poster__img" src="img/poster.png" alt="банка с едой?." width="280" height="270">
+          <a href="form.html" class="button poster-button">подобрать программу</a>
+        </div>
       </div>
 
     </article>
@@ -115,44 +119,44 @@
 
     </section>
 
-    <section class="example container">
+    <section class="example">
+      <div class="container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов в день.
+        </p>
 
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-        часов в день.
-      </p>
+        <div class="info">
 
-      <div class="info">
+          <div class="result">
 
-        <div class="result">
+            <div class="result__weight">
+              <p class="result__title">5 КГ</p>
+              <p class="result__subtitle">снижение веса</p>
+            </div>
 
-          <div class="result__weight">
-            <p class="result__title">5 КГ</p>
-            <p class="result__subtitle">снижение веса</p>
+            <div class="result__days">
+              <p class="result__title result__title-days">60 ДНЕЙ</p>
+              <p class="result__subtitle">затрачено времени</p>
+            </div>
+
           </div>
 
-          <div class="result__days">
-            <p class="result__title result__title-days">60 ДНЕЙ</p>
-            <p class="result__subtitle">затрачено времени</p>
+          <div class="expenses">
+            <p class="example__subtitle">Затраты на питание: </p>
+            <p class="example__subtitle"> 15 000 РУБ. </p>
           </div>
 
         </div>
 
-        <div class="expenses">
-          <p class="example__subtitle">Затраты на питание: </p>
-          <p class="example__subtitle"> 15 000 РУБ. </p>
+        <div class="slider">
+          <img src="img/big-cat.png" alt="жирная кошка." class="slider__img" width="280" height="277">
+
+          <span class="slider__range"></span>
+
         </div>
-
       </div>
-
-      <div class="slider">
-        <img src="img/big-cat.png" alt="жирная кошка." class="slider__img" width="280" height="277">
-
-        <span class="slider__range"></span>
-
-      </div>
-
     </section>
 
     <div class="invite container">
