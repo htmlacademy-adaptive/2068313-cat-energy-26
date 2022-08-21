@@ -7,7 +7,7 @@
   height: 100%;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat.jpg);
   background-repeat: no-repeat;
-  background-size: auto 320px;
+  background-size: auto 355px;
   background-position: center top;
   margin-bottom: 30px;
 
@@ -124,11 +124,18 @@
   }
 }
 
-.poster__img {
-  max-width: 350px;
-  height: 100%;
+.poster__picture {
   margin: 0 auto;
-  margin-top: -42px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.poster__img {
+  min-width: 320px;
+  height: 100%;
+  margin-top: 18px;
 
 
   @media (min-width: $tablet-width) {
