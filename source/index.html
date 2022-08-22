@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/script.js"></script>
@@ -57,8 +57,7 @@
   <main class="main-container">
 
     <article class="article">
-      <div class="container">
-
+      <div class="article__container">
         <h1 class="article__title">Функциональное<br> питание для котов</h1>
         <p class="article__desc">Занялся собой? Займись котом!</p>
 
@@ -68,7 +67,9 @@
             <source media="(min-width: 768px)" srcset="img/poster-tablet.png">
             <img class="poster__img" src="img/poster-mobile.png" alt="банка с едой?." width="280" height="270">
           </picture>
-          <a href="form.html" class="button poster-button">подобрать программу</a>
+
+          <a href="form.html" class="button poster__button">подобрать программу</a>
+
         </div>
       </div>
 
@@ -158,12 +159,14 @@
         </div>
 
         <div class="slider">
+
           <picture class="slider__picture">
-            <source media="(min-width: 1200px)" srcset="img/big_cat-tablet@1x.png 1x, img/big_cat-tablet@1x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/big_cat-tablet@1x.png 1x, img/big_cat-tablet@1x.png 2x">
+            <source media="(min-width: 1200px)" srcset="img/big_cat-tablet@1x.png 1x, img/big_cat-tablet@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/big_cat-tablet@1x.png 1x, img/big_cat-tablet@2x.png 2x">
             <img src="img/big_cat-mobile@1x.png" alt="жирная кошка." class="slider__img" width="280" height="277"
-            srcset="img/big_cat-mobile@1x.png 1x, img/big_cat-mobile@2x.png 2x">
+              srcset="img/big_cat-mobile@1x.png 1x, img/big_cat-mobile@2x.png 2x">
           </picture>
+
           <span class="slider__range"></span>
 
         </div>
