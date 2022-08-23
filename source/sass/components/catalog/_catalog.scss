@@ -38,7 +38,6 @@
 }
 
 .addition__cards {
-  padding: 0 20px;
 
   @media (min-width: $desktop-width) {
     width: 896px;
@@ -158,9 +157,9 @@
   margin-top: 35px;
   margin-bottom: 30px;
   border-top: 1px solid #cdcdcd;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/catinbag-small.jpg);
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-mobile@1x.png);
   background-repeat: no-repeat;
-  background-size: 100% 280px;
+  background-size: 100%;
   background-position: center;
   padding: 60px 43px;
   display: flex;
@@ -172,7 +171,7 @@
     height: 200px;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/catinbag.jpg);
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-tablet@1x.png);
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: 60px;
@@ -180,7 +179,7 @@
 
   @media (min-width: $desktop-width) {
     border: none;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/catinbag-small.jpg);
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-mobile@1x.png);
     background-repeat: no-repeat;
     background-size: 100% 280px;
     background-position: center;
@@ -197,6 +196,12 @@
     left: calc(100% - 250px);
   }
 }
+
+// @media (min-resolution: 2dppx) {
+//   .addition__gift {
+//     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/img/bag-mobile@2x.png);
+//   }
+// }  как сделать?
 
 .addition__title-gift {
   font-family: $font-fallback;
@@ -238,6 +243,7 @@
 
 .invite {
   display: flex;
+  align-items: center;
 }
 
 .invite__description {

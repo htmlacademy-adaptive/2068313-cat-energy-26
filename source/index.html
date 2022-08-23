@@ -62,10 +62,12 @@
         <p class="article__desc">Занялся собой? Займись котом!</p>
 
         <div class="poster">
+
           <picture class="poster__picture">
-            <source media="(min-width: 1200px)" srcset="img/poster-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/poster-tablet.png">
-            <img class="poster__img" src="img/poster-mobile.png" alt="банка с едой?." width="280" height="270">
+            <source media="(min-width: 1200px)" srcset="img/poster/poster-desktop@1x.png 1x, img/poster/poster-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/poster/poster-tablet@1x.png 1x, img/poster/poster-tablet@2x.png 2x">
+            <img class="poster__img" src="img/poster/poster-mobile@1x.png" alt="банка с едой?." width="280" height="270"
+              srcset="img/poster/poster-mobile@1x.png 1x, img/poster/poster-mobile@2x.png 2x">
           </picture>
 
           <a href="form.html" class="button poster__button">подобрать программу</a>
@@ -161,11 +163,22 @@
         <div class="slider">
 
           <picture class="slider__picture">
-            <source media="(min-width: 1200px)" srcset="img/big_cat-tablet@1x.png 1x, img/big_cat-tablet@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/big_cat-tablet@1x.png 1x, img/big_cat-tablet@2x.png 2x">
-            <img src="img/big_cat-mobile@1x.png" alt="жирная кошка." class="slider__img" width="280" height="277"
-              srcset="img/big_cat-mobile@1x.png 1x, img/big_cat-mobile@2x.png 2x">
+            <source media="(min-width: 1200px)" srcset="img/slider/small_cat-tablet@1x.png 1x, img/slider/small_cat-tablet@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/slider/small_cat-tablet@1x.png 1x, img/slider/small_cat-tablet@2x.png 2x">
+            <img class="slider__img" src="img/slider/small_cat-mobile@1x.png" alt="худая кошка." width="280" height="277"
+              srcset="img/slider/small_cat-mobile@1x.png 1x, img/slider/small_cat-mobile@2x.png 2x">
           </picture>
+
+          <div class="slider__top">
+
+            <picture class="slider__picture">
+              <source media="(min-width: 1200px)" srcset="img/slider/big_cat-tablet@1x.png 1x, img/slider/big_cat-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/slider/big_cat-tablet@1x.png 1x, img/slider/big_cat-tablet@2x.png 2x">
+              <img class="slider__img" src="img/slider/big_cat-mobile@1x.png" alt="жирная кошка." width="280" height="277"
+                srcset="img/slider/big_cat-mobile@1x.png 1x, img/slider/big_cat-mobile@2x.png 2x">
+            </picture>
+
+          </div>
 
           <span class="slider__range"></span>
 

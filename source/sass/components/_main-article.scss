@@ -4,7 +4,7 @@
   padding: 20px;
   min-height: 500px;
   height: 100%;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat.jpg), linear-gradient(68deg, rgba(79 78 82), rgb(66 65 70));
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat@1x.png), linear-gradient(68deg, rgba(79 78 82), rgb(66 65 70));
   background-repeat: no-repeat;
   background-size: auto 302px;
   background-position: center top;
@@ -22,18 +22,30 @@
   }
 }
 
+@media (min-resolution: 2dppx) {
+  .article{
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat@2x.png), linear-gradient(68deg, rgba(79 78 82), rgb(66 65 70));
+  }
+}
+
 @media (min-width: $desktop-width) {
   .article::after {
     content: "";
     display: block;
     background-repeat: no-repeat;
     height: 690px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat-big.jpg), linear-gradient(rgb(61 60 640), rgb(80 81 86));
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat-desktop@1x.png), linear-gradient(rgb(61 60 640), rgb(80 81 86));
     position: absolute;
     top: -150px;
     right: 0;
     left: calc((100% - 1220px) / 2 + 610px);
     z-index: -10;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .article::after {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat-desktop@2x.png), linear-gradient(rgb(61 60 640), rgb(80 81 86));
   }
 }
 

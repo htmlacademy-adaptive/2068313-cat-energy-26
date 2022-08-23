@@ -127,7 +127,6 @@ input[type=tel] {
 .field-contact {
   position: relative;
   border: none;
-  width: 100%;
 
   &::after {
     content: "";
@@ -320,6 +319,7 @@ textarea {
   max-width: 400px;
 
   @media (min-width: $tablet-width) {
+    height: 52px;
     margin: 10px;
     margin-right: 60px;
     max-width: 290px;

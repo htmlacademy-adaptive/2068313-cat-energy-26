@@ -45,10 +45,12 @@
   }
 }
 
-.card__img {
+.card__picture {
   grid-area: img;
   place-self: center;
+}
 
+.card__img {
   @media (min-width: $tablet-width) {
     width: 161px;
     height: 172px;

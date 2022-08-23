@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/script.js"></script>
 </head>
@@ -60,7 +63,16 @@
       <div class="cards">
 
         <div class="card">
-          <img class="card__img" src="img/energy-orange.png" alt="cat energy 500g." width="68" height="86">
+
+          <picture class="card__picture">
+            <source media="(min-width: 1200px)"
+              srcset="img/card/chicken/chicken-desktop@1x.png 1x, img/card/chicken/chicken-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/card/chicken/chicken-desktop@1x.png 1x, img/card/chicken/chicken-desktop@2x.png 2x">
+            <img class="card__img" src="img/card/chicken/chicken-mobile@1x.png" alt="cat energy 500g." width="68"
+              height="86" srcset="img/card/chicken/chicken-mobile@1x.png 1x, img/card/chicken/chicken-mobile@2x.png 2x">
+          </picture>
+
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 500 г</caption>
             <tr>
@@ -82,8 +94,17 @@
         </div>
 
         <div class="card">
-          <img class="card__img card__img-big" src="img/energy-orange-big.png" alt="cat energy 1000g." width="68"
-            height="86">
+
+          <picture class="card__picture">
+            <source media="(min-width: 1200px)"
+              srcset="img/card/chicken/chicken2-desktop@1x.png 1x, img/card/chicken/chicken2-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/card/chicken/chicken2-desktop@1x.png 1x, img/card/chicken/chicken2-desktop@2x.png 2x">
+            <img class="card__img" src="img/card/chicken/chicken2-mobile@1x.png" alt="cat energy 1000g." width="84"
+              height="100"
+              srcset="img/card/chicken/chicken2-mobile@1x.png 1x, img/card/chicken/chicken2-mobile@2x.png 2x">
+          </picture>
+
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 1000 г</caption>
             <tr>
@@ -105,7 +126,16 @@
         </div>
 
         <div class="card">
-          <img class="card__img" src="img/energy-green.png" alt="cat energy 500g." width="68" height="78">
+
+          <picture class="card__picture">
+            <source media="(min-width: 1200px)"
+              srcset="img/card/fish/fish-desktop@1x.png 1x, img/card/fish/fish-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/card/fish/fish-desktop@1x.png 1x, img/card/fish/fish-desktop@2x.png 2x">
+            <img class="card__img" src="img/fish/fish-mobile@1x.png" alt="cat energy 500g." width="68" height="78"
+              height="86" srcset="img/card/fish/fish-mobile@1x.png 1x, img/card/fish/fish-mobile@2x.png 2x">
+          </picture>
+
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 500 г</caption>
             <tr>
@@ -128,8 +158,16 @@
         </div>
 
         <div class="card">
-          <img class="card__img card__img-big" src="img/energy-green-big.png" alt="cat energy 1000g." width="84"
-            height="101">
+
+          <picture class="card__picture">
+            <source media="(min-width: 1200px)"
+              srcset="img/card/fish/fish2-desktop@1x.png 1x, img/card/fish/fish2-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/card/fish/fish2-desktop@1x.png 1x, img/card/fish/fish2-desktop@2x.png 2x">
+            <img class="card__img" src="img/fish/fish2-mobile@1x.png" alt="cat energy 1000g." width="84" height="100"
+              srcset="img/card/fish/fish2-mobile@1x.png 1x, img/card/fish/fish2-mobile@2x.png 2x">
+          </picture>
+
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 1000 г</caption>
             <tr>
@@ -152,7 +190,16 @@
         </div>
 
         <div class="card">
-          <img class="card__img" src="img/energy-blue.png" alt="cat energy 500g." width="68" height="78">
+
+          <picture class="card__picture">
+            <source media="(min-width: 1200px)"
+              srcset="img/card/corn/corn-desktop@1x.png 1x, img/card/corn/corn-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/card/corn/corn-desktop@1x.png 1x, img/card/corn/corn-desktop@2x.png 2x">
+            <img class="card__img" src="img/corn/corn-mobile@1x.png" alt="cat energy 500g." width="68" height="78"
+              srcset="img/card/corn/corn-mobile@1x.png 1x, img/card/corn/corn-mobile@2x.png 2x">
+          </picture>
+
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 500 г</caption>
             <tr>
@@ -175,8 +222,16 @@
         </div>
 
         <div class="card">
-          <img class="card__img card__img-big" src="img/energy-blue-big.png" alt="cat energy 1000g." width="84"
-            height="101">
+
+          <picture class="card__picture">
+            <source media="(min-width: 1200px)"
+              srcset="img/card/corn/corn2-desktop@1x.png 1x, img/card/corn/corn2-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/card/corn/corn2-desktop@1x.png 1x, img/card/corn/corn2-desktop@2x.png 2x">
+            <img class="card__img" src="img/corn/corn2-mobile@1x.png" alt="cat energy 1000g." width="84" height="101"
+              srcset="img/card/corn/corn2-mobile@1x.png 1x, img/card/corn/corn2-mobile@2x.png 2x">
+          </picture>
+
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 1000 г</caption>
             <tr>
@@ -199,7 +254,16 @@
         </div>
 
         <div class="card">
-          <img class="card__img" src="img/energy-purple.png" alt="cat energy 500g." width="72" height="84">
+
+          <picture class="card__picture">
+            <source media="(min-width: 1200px)"
+              srcset="img/card/rice/rice-desktop@1x.png 1x, img/card/rice/rice-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/card/rice/rice-desktop@1x.png 1x, img/card/rice/rice-desktop@2x.png 2x">
+            <img class="card__img" src="img/card/rice/rice-mobile@1x.png" alt="cat energy 500g." width="72" height="84"
+              srcset="img/card/rice/rice-mobile@1x.png 1x, img/card/rice/rice-mobile@2x.png 2x">
+          </picture>
+
           <table class="card__table">
             <caption class="card__title">Cat Energy PRO 500 г</caption>
             <tr>
