@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/script.js"></script>
 </head>
@@ -30,16 +33,17 @@
 
         <ul class="nav__list">
 
-          <li class="nav__item nav__item--active-index">
-            <a class="nav__link" href="index.html">Главная</a>
+          <li class="nav__item">
+            <a class="nav__link nav__link--index nav__link--active nav__link--index--active"
+              href="index.html">Главная</a>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link" href="catalog.html">каталог продукции</a>
+            <a class="nav__link nav__link--index" href="catalog.html">каталог продукции</a>
           </li>
 
           <li class="nav__item">
-            <a class="nav__link" href="form.html">подбор программы</a>
+            <a class="nav__link nav__link--index" href="form.html">подбор программы</a>
           </li>
 
         </ul>
@@ -52,13 +56,23 @@
 
   <main class="main-container">
 
-    <article class="article container">
-      <h1 class="article__title">Функциональное<br> питание для котов</h1>
-      <p class="article__desc">Занялся собой? Займись котом!</p>
+    <article class="article">
+      <div class="article__container">
+        <h1 class="article__title">Функциональное<br> питание для котов</h1>
+        <p class="article__desc">Занялся собой? Займись котом!</p>
 
-      <div class="poster">
-        <img class="poster__img" src="img/poster.png" alt="банка с едой?." width="280" height="270">
-        <a href="form.html" class="button poster-button">подобрать программу</a>
+        <div class="poster">
+
+          <picture class="poster__picture">
+            <source media="(min-width: 1200px)" srcset="img/poster/poster-desktop@1x.png 1x, img/poster/poster-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/poster/poster-tablet@1x.png 1x, img/poster/poster-tablet@2x.png 2x">
+            <img class="poster__img" src="img/poster/poster-mobile@1x.png" alt="банка с едой?." width="280" height="270"
+              srcset="img/poster/poster-mobile@1x.png 1x, img/poster/poster-mobile@2x.png 2x">
+          </picture>
+
+          <a href="form.html" class="button poster__button">подобрать программу</a>
+
+        </div>
       </div>
 
     </article>
@@ -115,44 +129,61 @@
 
     </section>
 
-    <section class="example container">
+    <section class="example">
+      <div class="container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов в день.
+        </p>
 
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-        часов в день.
-      </p>
+        <div class="info">
 
-      <div class="info">
+          <div class="result">
 
-        <div class="result">
+            <div class="result__weight">
+              <p class="result__title">5 КГ</p>
+              <p class="result__subtitle">снижение веса</p>
+            </div>
 
-          <div class="result__weight">
-            <p class="result__title">5 КГ</p>
-            <p class="result__subtitle">снижение веса</p>
+            <div class="result__days">
+              <p class="result__title result__title-days">60 ДНЕЙ</p>
+              <p class="result__subtitle">затрачено времени</p>
+            </div>
+
           </div>
 
-          <div class="result__days">
-            <p class="result__title result__title-days">60 ДНЕЙ</p>
-            <p class="result__subtitle">затрачено времени</p>
+          <div class="expenses">
+            <p class="example__subtitle">Затраты на питание: </p>
+            <p class="example__subtitle"> 15 000 РУБ. </p>
           </div>
 
         </div>
 
-        <div class="expenses">
-          <p class="example__subtitle">Затраты на питание: </p>
-          <p class="example__subtitle"> 15 000 РУБ. </p>
+        <div class="slider">
+
+          <picture class="slider__picture">
+            <source media="(min-width: 1200px)" srcset="img/slider/small_cat-tablet@1x.png 1x, img/slider/small_cat-tablet@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/slider/small_cat-tablet@1x.png 1x, img/slider/small_cat-tablet@2x.png 2x">
+            <img class="slider__img" src="img/slider/small_cat-mobile@1x.png" alt="худая кошка." width="280" height="277"
+              srcset="img/slider/small_cat-mobile@1x.png 1x, img/slider/small_cat-mobile@2x.png 2x">
+          </picture>
+
+          <div class="slider__top">
+
+            <picture class="slider__picture">
+              <source media="(min-width: 1200px)" srcset="img/slider/big_cat-tablet@1x.png 1x, img/slider/big_cat-tablet@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/slider/big_cat-tablet@1x.png 1x, img/slider/big_cat-tablet@2x.png 2x">
+              <img class="slider__img" src="img/slider/big_cat-mobile@1x.png" alt="жирная кошка." width="280" height="277"
+                srcset="img/slider/big_cat-mobile@1x.png 1x, img/slider/big_cat-mobile@2x.png 2x">
+            </picture>
+
+          </div>
+
+          <span class="slider__range"></span>
+
         </div>
-
       </div>
-
-      <div class="slider">
-        <img src="img/big-cat.png" alt="жирная кошка." class="slider__img" width="280" height="277">
-
-        <span class="slider__range"></span>
-
-      </div>
-
     </section>
 
     <div class="invite container">
