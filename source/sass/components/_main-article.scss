@@ -4,15 +4,14 @@
   padding: 20px;
   min-height: 500px;
   height: 100%;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat@1x.png), linear-gradient(68deg, rgba(79 78 82), rgb(66 65 70));
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat@1x.png), linear-gradient(68deg, rgba(79 78 82), rgb(66 65 70));
   background-repeat: no-repeat;
   background-size: auto 302px;
   background-position: center top;
   margin-bottom: 30px;
 
   @media (min-resolution: 2dppx) and (min-width: 320px) {
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat@2x.png), linear-gradient(68deg, rgba(79 78 82), rgb(66 65 70));
-    background-size: auto;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/background-cat@2x.png), linear-gradient(68deg, rgba(79 78 82), rgb(66 65 70));
   }
 
   @media (min-width: $tablet-width) {
