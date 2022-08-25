@@ -1,4 +1,5 @@
 .catalog-title {
+  display: block;
   margin-bottom: 40px;
   font-weight: 400;
   font-size: 36px;
@@ -179,7 +180,7 @@
     background-size: 100%;
     margin-bottom: 60px;
 
-    @media (min-resolution: 2dppx) and (min-width: $tablet-width) {
+    @media (min-resolution: 2dppx) {
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/img/bag-tablet@2x.png);
     }
   }
@@ -202,7 +203,7 @@
     top: 140px;
     left: calc(100% - 250px);
 
-    @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/img/bag-mobile@2x.png);
     }
   }
