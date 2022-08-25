@@ -204,7 +204,7 @@
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $color-bg-item;
     padding-bottom: 5px;
-}
+  }
 }
 
 .nav__link--index {
@@ -218,12 +218,12 @@
   }
 }
 
-.nav__link--index--active {
+.nav__link--index.nav__link--active {
   @media (min-width: $desktop-width) {
-    padding-bottom: 5px;
     border-bottom: 2px solid #ffffff;
   }
 }
+
 // .nav__toggle:hover,
 // .nav:focus-within > .nav__wrapper {
 //   display: flex;
