@@ -204,9 +204,11 @@ input[type=tel] {
   &::before {
     content: "";
     display: inline-block;
-    width: 18px;
-    height: 14px;
-    background-image: url(../img/icons/letter.svg);
+    width: 20px;
+    height: 16px;
+    background-image: url(../img/sprite.svg#letter);
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     top: 35%;
     right: 5%;
@@ -225,7 +227,8 @@ input[type=tel] {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(../img/icons/phone.svg);
+    background-image: url(../img/sprite.svg#phone);
+    background-position: center;
     position: absolute;
     top: 30%;
     right: 5%;
@@ -425,7 +428,10 @@ textarea {
   opacity: 0;
 
   &:checked+label > .checkbox-bg {
-    background-image: url(../img/icons/vector.svg);
+    background-image: url(../img/sprite.svg#vector);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 18px;
     height: 14px;
     margin-left: -34px;

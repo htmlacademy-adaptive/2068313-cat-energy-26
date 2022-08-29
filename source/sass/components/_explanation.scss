@@ -93,19 +93,19 @@
   }
 
   &--leaf::before {
-    background-image: url(../img/icons/leaf.svg);
+    background-image: url(../img/sprite.svg#leaf);
   }
 
   &--powder::before {
-    background-image: url(../img/icons/powder.svg);
+    background-image: url(../img/sprite.svg#powder);
   }
 
   &--food::before {
-    background-image: url(../img/icons/food.svg);
+    background-image: url(../img/sprite.svg#food);
   }
 
   &--clock::before {
-    background-image: url(../img/icons/clock.svg);
+    background-image: url(../img/sprite.svg#clock);
   }
 }
 

@@ -50,19 +50,19 @@
 
 .social__link {
   &--vk::before {
-    background: url(../img/icons/vk.svg);
+    background: url(../img/sprite.svg#vk);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--youtube::before {
-    background: url(../img/icons/youtube.svg);
+    background: url(../img/sprite.svg#youtube);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--tg::before {
-    background: url(../img/icons/telegramm.svg);
+    background: url(../img/sprite.svg#telegramm);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -100,7 +100,7 @@
   display: block;
   width: 27px;
   height: 34px;
-  background: url(../img/icons/htmlacademy.svg);
+  background: url(../img/sprite.svg#htmlacademy);
   background-repeat: no-repeat;
   margin-top: 22px;
   margin-bottom: 22px;
