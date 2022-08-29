@@ -21,7 +21,7 @@
     <a href="index.html" class="main-header__logo">
       <span class="main-header__logo-img"></span>
 
-      <img class="main-header__logo-text" src="img/icons/logo-title.svg" width="101" height="20" alt="Cat energy.">
+      <img class="main-header__logo-text" src="img/sprite.svg#logo-title" width="101" height="20" alt="Cat energy.">
     </a>
 
     <nav class="nav">
@@ -64,6 +64,12 @@
         <div class="poster">
 
           <picture class="poster__picture">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/poster/poster-desktop@1x.webp 1x, img/poster/poster-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/poster/poster-desktop@1x.webp 1x, img/poster/poster-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/poster/poster-mobile@1x.webp 1x, img/poster/poster-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)"
               srcset="img/poster/poster-desktop@1x.png 1x, img/poster/poster-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
@@ -213,7 +219,7 @@
   <footer class="footer-page">
     <div class="container footer-page__container">
       <a class="footer-page__logo">
-        <img src="img/icons/logo-title.svg" width="128" height="24" alt="Картинка кота.">
+        <img src="img/sprite.svg#logo-title" width="128" height="24" alt="Картинка кота.">
       </a>
 
       <ul class="social">
