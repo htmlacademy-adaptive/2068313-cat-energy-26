@@ -110,6 +110,21 @@ input[type=tel] {
   text-transform: uppercase;
   color: $color-txt-gray;
   margin-left: 13px;
+  border: none;
+  border: 1px solid #E7E7E7;
+  outline: none;
+
+  &:hover{
+    border: 1px solid #CDCDCD;
+  }
+
+  &:focus{
+    box-shadow: 0 0 0 2px #444444;
+  }
+
+   &:invalid{
+    box-shadow: 0 0 0 2px #FF8282;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -206,9 +221,11 @@ input[type=tel] {
     display: inline-block;
     width: 20px;
     height: 16px;
-    background-image: url(../img/sprite.svg#letter);
-    background-repeat: no-repeat;
-    background-position: center;
+    -webkit-mask-image: url(../img/sprite.svg#letter);
+    mask-image: url(../img/sprite.svg#letter);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    background-color: #222222;
     position: absolute;
     top: 35%;
     right: 5%;
@@ -227,10 +244,13 @@ input[type=tel] {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(../img/sprite.svg#phone);
-    background-position: center;
+    -webkit-mask-image: url(../img/sprite.svg#phone);
+    mask-image: url(../img/sprite.svg#phone);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    background-color: #222222;;
     position: absolute;
-    top: 30%;
+    top: 35%;
     right: 5%;
   }
 
@@ -456,7 +476,14 @@ textarea {
       width: 30px;
       height: 30px;
       margin: 0 10px;
+
     }
+
+    &:disabled{
+      opacity: 0.3;
+    }
+
   }
+
 }
   /*stylelint-enable */
