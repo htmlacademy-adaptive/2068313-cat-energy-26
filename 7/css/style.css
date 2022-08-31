@@ -1990,9 +1990,9 @@ input[type=email]:focus,
 input[type=tel]:focus {
   box-shadow: 0 0 0 2px #444444;
 }
-input[type=text]:invalid,
-input[type=email]:invalid,
-input[type=tel]:invalid {
+input[type=text]:not(:placeholder-shown):not(:focus):invalid,
+input[type=email]:not(:placeholder-shown):not(:focus):invalid,
+input[type=tel]:not(:placeholder-shown):not(:focus):invalid {
   box-shadow: 0 0 0 2px #FF8282;
 }
 @media (min-width: 768px) {
@@ -2088,11 +2088,32 @@ input[type=tel] {
 }
 
 /*stylelint-disable */
+.input_cond:focus ~ .input-email-letter {
+  background-color: #68B738;
+}
+
+.input_cond:focus ~ .input-email-tel {
+  background-color: #68B738;
+}
+
+.input_cond:invalid ~ .input-email-letter {
+  background-color: #FF8282;
+}
+
+.input_cond:not(:placeholder-shown):not(:focus):invalid ~ .input-email-tel {
+  background-color: #FF8282;
+}
+
 .input-email {
   position: relative;
 }
-.input-email::before {
-  content: "";
+@media (min-width: 1280px) {
+  .input-email {
+    grid-area: email;
+  }
+}
+
+.input-email-letter {
   display: inline-block;
   width: 20px;
   height: 16px;
@@ -2105,17 +2126,17 @@ input[type=tel] {
   top: 35%;
   right: 5%;
 }
-@media (min-width: 1280px) {
-  .input-email {
-    grid-area: email;
-  }
-}
 
 .input-tel {
   position: relative;
 }
-.input-tel::before {
-  content: "";
+@media (min-width: 1280px) {
+  .input-tel {
+    grid-area: tel;
+  }
+}
+
+.input-email-tel {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -2127,11 +2148,6 @@ input[type=tel] {
   position: absolute;
   top: 35%;
   right: 5%;
-}
-@media (min-width: 1280px) {
-  .input-tel {
-    grid-area: tel;
-  }
 }
 
 /*stylelint-enable */
