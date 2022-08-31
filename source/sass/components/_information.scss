@@ -48,7 +48,7 @@
   &-cat::before {
     content: "";
     display: block;
-    background-image: url(../img/icons/cat_back.svg);
+    background-image: url(../img/sprite.svg#cat_back);
     width: 50px;
     height: 53px;
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@
   &-panter::before {
     content: "";
     display: block;
-    background-image: url(../img/icons/panter_back.svg);
+    background-image: url(../img/sprite.svg#panter_back);
     width: 67px;
     height: 50px;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@
   &::after {
     content: "";
     display: inline-block;
-    background-image: url(../img/icons/arrow.svg);
+    background-image: url(../img/sprite.svg#arrow);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;

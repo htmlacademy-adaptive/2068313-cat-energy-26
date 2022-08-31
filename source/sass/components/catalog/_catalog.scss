@@ -1,4 +1,5 @@
 .catalog-title {
+  display: block;
   margin-bottom: 40px;
   font-weight: 400;
   font-size: 36px;
@@ -23,7 +24,7 @@
     background-color: $color-bg-item;
     position: absolute;
     top: 60px;
-    left: 20px;
+    left: -100px;
     z-index: -1;
 
     @media (min-width: $desktop-width) {
@@ -38,7 +39,6 @@
 }
 
 .addition__cards {
-
   @media (min-width: $desktop-width) {
     width: 896px;
   }
@@ -157,7 +157,7 @@
   margin-top: 35px;
   margin-bottom: 30px;
   border-top: 1px solid #cdcdcd;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-mobile@1x.png);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-mobile@1x.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -167,19 +167,27 @@
   align-items: center;
   justify-content: flex-end;
 
+  @media (min-resolution: 2dppx) and (min-width: 320px) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-mobile@2x.png);
+  }
+
   @media (min-width: $tablet-width) {
     height: 200px;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-tablet@1x.png);
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-tablet@1x.png);
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/img/bag-tablet@2x.png);
+    }
   }
 
   @media (min-width: $desktop-width) {
     border: none;
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-mobile@1x.png);
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-mobile@1x.png);
     background-repeat: no-repeat;
     background-size: 100% 280px;
     background-position: center;
@@ -194,14 +202,12 @@
     height: 290px;
     top: 140px;
     left: calc(100% - 250px);
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/img/bag-mobile@2x.png);
+    }
   }
 }
-
-// @media (min-resolution: 2dppx) {
-//   .addition__gift {
-//     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/img/bag-mobile@2x.png);
-//   }
-// }  как сделать?
 
 .addition__title-gift {
   font-family: $font-fallback;
@@ -225,7 +231,7 @@
 
 .addition__link {
   display: block;
-  background-image: url(../img/icons/icon_gift.svg);
+  background-image: url(../img/sprite.svg#icon_gift);
   width: 80px;
   height: 80px;
 

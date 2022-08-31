@@ -20,7 +20,7 @@
     <a href="index.html" class="main-header__logo">
       <span class="main-header__logo-img"></span>
 
-      <img class="main-header__logo-text" src="img/icons/logo-title.svg" width="101" height="20" alt="Cat energy.">
+      <img class="main-header__logo-text" src="img/sprite.svg#logo-title" width="101" height="20" alt="Cat energy.">
     </a>
 
     <nav class="nav">
@@ -34,8 +34,7 @@
         <ul class="nav__list">
 
           <li class="nav__item">
-            <a class="nav__link nav__link--index nav__link--active nav__link--index--active"
-              href="index.html">Главная</a>
+            <a class="nav__link nav__link--index nav__link--active" href="index.html">Главная</a>
           </li>
 
           <li class="nav__item">
@@ -64,8 +63,16 @@
         <div class="poster">
 
           <picture class="poster__picture">
-            <source media="(min-width: 1200px)" srcset="img/poster/poster-desktop@1x.png 1x, img/poster/poster-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/poster/poster-tablet@1x.png 1x, img/poster/poster-tablet@2x.png 2x">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/poster/poster-desktop@1x.webp 1x, img/poster/poster-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/poster/poster-desktop@1x.webp 1x, img/poster/poster-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/poster/poster-mobile@1x.webp 1x, img/poster/poster-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)"
+              srcset="img/poster/poster-desktop@1x.png 1x, img/poster/poster-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/poster/poster-tablet@1x.png 1x, img/poster/poster-tablet@2x.png 2x">
             <img class="poster__img" src="img/poster/poster-mobile@1x.png" alt="банка с едой?." width="280" height="270"
               srcset="img/poster/poster-mobile@1x.png 1x, img/poster/poster-mobile@2x.png 2x">
           </picture>
@@ -130,7 +137,8 @@
     </section>
 
     <section class="example">
-      <div class="container">
+      <div class="container example__container">
+
         <h2 class="example__title">Живой пример</h2>
         <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -163,19 +171,23 @@
         <div class="slider">
 
           <picture class="slider__picture">
-            <source media="(min-width: 1200px)" srcset="img/slider/small_cat-tablet@1x.png 1x, img/slider/small_cat-tablet@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/slider/small_cat-tablet@1x.png 1x, img/slider/small_cat-tablet@2x.png 2x">
-            <img class="slider__img" src="img/slider/small_cat-mobile@1x.png" alt="худая кошка." width="280" height="277"
-              srcset="img/slider/small_cat-mobile@1x.png 1x, img/slider/small_cat-mobile@2x.png 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/slider/small_cat-tablet@1x.png 1x, img/slider/small_cat-tablet@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/slider/small_cat-tablet@1x.png 1x, img/slider/small_cat-tablet@2x.png 2x">
+            <img class="slider__img" src="img/slider/small_cat-mobile@1x.png" alt="худая кошка." width="280"
+              height="277" srcset="img/slider/small_cat-mobile@1x.png 1x, img/slider/small_cat-mobile@2x.png 2x">
           </picture>
 
           <div class="slider__top">
 
             <picture class="slider__picture">
-              <source media="(min-width: 1200px)" srcset="img/slider/big_cat-tablet@1x.png 1x, img/slider/big_cat-tablet@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/slider/big_cat-tablet@1x.png 1x, img/slider/big_cat-tablet@2x.png 2x">
-              <img class="slider__img" src="img/slider/big_cat-mobile@1x.png" alt="жирная кошка." width="280" height="277"
-                srcset="img/slider/big_cat-mobile@1x.png 1x, img/slider/big_cat-mobile@2x.png 2x">
+              <source media="(min-width: 1200px)"
+                srcset="img/slider/big_cat-tablet@1x.png 1x, img/slider/big_cat-tablet@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/slider/big_cat-tablet@1x.png 1x, img/slider/big_cat-tablet@2x.png 2x">
+              <img class="slider__img" src="img/slider/big_cat-mobile@1x.png" alt="жирная кошка." width="280"
+                height="277" srcset="img/slider/big_cat-mobile@1x.png 1x, img/slider/big_cat-mobile@2x.png 2x">
             </picture>
 
           </div>
@@ -203,39 +215,39 @@
 
   </main>
 
-  <footer class="footer-page container">
+  <footer class="footer-page">
+    <div class="container footer-page__container">
+      <a class="footer-page__logo" href="index.html">
+        <img src="img/sprite.svg#logo-title" width="128" height="24" alt="cat energy.">
+      </a>
 
-    <a class="footer-page__logo">
-      <img src="img/icons/logo-title.svg" width="128" height="24" alt="Картинка кота.">
-    </a>
+      <ul class="social">
 
-    <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">в контакте.</span>
+          </a>
+        </li>
 
-      <li class="social__item">
-        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">в контакте.</span>
-        </a>
-      </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">ютуб.</span>
+          </a>
+        </li>
 
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">ютуб.</span>
-        </a>
-      </li>
+        <li class="social__item">
+          <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">втелеграмм.</span>
+          </a>
+        </li>
 
-      <li class="social__item">
-        <a class="social__link social__link--tg" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">втелеграмм.</span>
-        </a>
-      </li>
+      </ul>
 
-    </ul>
-
-    <div class="copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <span class="copyright__icon"></span>
+      <div class="copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="copyright__icon"></span>
+      </div>
     </div>
-
   </footer>
 
 </body>

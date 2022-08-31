@@ -6,10 +6,10 @@ const openMenu = ()=> {
   wrapMenu.classList.toggle(classMenuActive);
 
   if(wrapMenu.classList.contains(classMenuActive)){
-    btnNav.style.backgroundImage = "url(./img/icons/Logo_mobile-close.svg)";
+    btnNav.style.backgroundImage = "url(./img/sprite.svg#logo_mobile-close)";
 
   }else{
-    btnNav.style.backgroundImage = "url(./img/icons/Logo_mobile.svg)";
+    btnNav.style.backgroundImage = "url(./img/sprite.svg#logo_mobile)";
   }
 }
 

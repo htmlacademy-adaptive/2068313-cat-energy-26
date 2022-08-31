@@ -33,6 +33,6 @@ body {
   }
 
   @media (min-width: $desktop-width) {
-    width: 1280px;
+    max-width: 1280px;
   }
 }

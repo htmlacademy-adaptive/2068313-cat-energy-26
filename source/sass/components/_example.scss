@@ -15,6 +15,12 @@
   }
 }
 
+.example__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .example__content {
   display: flex;
   flex-direction: column;
@@ -33,12 +39,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
     padding-bottom: 20px;
   }
 }
 
 .example__desc {
+  display: block;
+  height: 80px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -52,7 +59,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
     width: 540px;
   }
 }
@@ -67,7 +73,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     position: absolute;
-    left: 110px;
+    left: 0;
     top: 150px;
   }
 }
@@ -113,10 +119,6 @@
   display: flex;
   gap: 30px;
   position: relative;
-
-  @media (min-width: $desktop-width) {
-    padding-left: 110px;
-  }
 }
 
 .result__weight {
