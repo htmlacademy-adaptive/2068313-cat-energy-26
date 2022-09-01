@@ -20,7 +20,11 @@
     <a href="index.html" class="main-header__logo">
       <span class="main-header__logo-img"></span>
 
-      <img class="main-header__logo-text" src="img/sprite.svg#logo-title" width="101" height="20" alt="Cat energy.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/icons/logo-big.svg" width="202" height="60" alt="логотип компании.">
+        <source media="(min-width: 768px)" srcset="img/icons/logo-middle.svg" width="174" height="52" alt="логотип компании.">
+        <img class="main-header__logo-text" src="img/icons/logo-title.svg" width="101" height="18" alt="логотип компании.">
+      </picture>
     </a>
 
     <nav class="nav">
