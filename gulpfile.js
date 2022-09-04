@@ -5,7 +5,16 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
+
 // Styles
+
+export const css = () => {
+  return gulp.src('./src/*.css')
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
+    .pipe(gulp.dest('./dest'))
+};
 
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
