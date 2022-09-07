@@ -46,7 +46,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     padding: 0 30px;
   }
 }
@@ -59,19 +59,20 @@
   flex-direction: column;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid #e7e7e7;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+    padding: 0;
   }
 }
 
 .input-desc {
+  padding-top: 10px;
   white-space: nowrap;
   font-family: $font;
   font-weight: 400;
@@ -131,10 +132,7 @@ input[type=tel] {
     line-height: 30px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 10px;
-    padding: 10px;
-  }
+
 }
 
   /*stylelint-enable */
@@ -454,6 +452,10 @@ textarea {
       margin: 0 10px;
     }
   }
+}
+
+.input-desc-p{
+  padding: 20px 0;
 }
 
 .input-checkbox {
