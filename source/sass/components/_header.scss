@@ -6,11 +6,11 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 25px;
+    margin-top: 17px;
   }
 }
 
@@ -37,6 +37,10 @@
       left: 0;
       top: 0;
       transform: translate(0);
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 26px;
     }
   }
 
@@ -93,7 +97,7 @@
 .nav__wrapper {
   position: absolute;
   width: 100%;
-  top: 59px;
+  top: 64px;
   left: 0;
   background: $color-txt-white;
   z-index: 1;
@@ -110,7 +114,8 @@
   @media (min-width: $desktop-width) {
     max-width: 600px;
     margin-left: 60px;
-    margin-right: 40px;
+    margin-right: 44px;
+    margin-top: 35px;
   }
 }
 
@@ -133,8 +138,8 @@
 
 .nav__item {
   list-style: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 22px;
+  padding-bottom: 19px;
   z-index: 1;
   border-top: 1px solid #e6e6e6;
 

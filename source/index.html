@@ -9,6 +9,10 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <script defer src="js/script.js"></script>
 </head>
@@ -122,7 +126,7 @@
         </li>
 
         <li class="explanation__item">
-          <p class="explanation__desc explanation__desc--powder">Выпускается в виде порошка, который нужно лишь залить
+          <p class="explanation__desc explanation__desc--powder">Выпускается в виде порошка,<br> который нужно лишь залить
             кипятком и готово.</p>
         </li>
 
@@ -141,7 +145,10 @@
     </section>
 
     <section class="example">
+
       <div class="container example__container">
+
+        <div class="example__flex">
 
         <h2 class="example__title">Живой пример</h2>
         <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
@@ -160,7 +167,7 @@
 
             <div class="result__days">
               <p class="result__title result__title-days">60 ДНЕЙ</p>
-              <p class="result__subtitle">затрачено времени</p>
+              <p class="result__subtitle result__subtitle-days">затрачено времени</p>
             </div>
 
           </div>
@@ -171,6 +178,8 @@
           </div>
 
         </div>
+
+       </div>
 
         <div class="slider">
 
@@ -199,15 +208,18 @@
           <span class="slider__range"></span>
 
         </div>
+
       </div>
+
     </section>
 
     <div class="invite container">
-      <p class="invite__title">приглашаем к сотрудничеству дилеров!</p>
-      <p class="invite__desc">ул. Большая<br> Конюшенная, д. 19/8<br>
+      <p class="invite__title">приглашаем<br class="invite"> к  сотрудничеству дилеров!</p>
+      <div>
+      <p class="invite__desc">ул. Большая Конюшенная, д. 19/8<br></p>
 
-        Санкт-Петербург</p>
-
+        <p class="invite__desc invite-top"> Санкт-Петербург</p>
+      </div>
     </div>
 
     <div class="location">
@@ -222,7 +234,7 @@
   <footer class="footer-page">
     <div class="container footer-page__container">
       <a class="footer-page__logo" href="index.html">
-        <img src="img/sprite.svg#logo-title" width="128" height="24" alt="cat energy.">
+        <img src="img/logo-title.svg" width="128" height="24" alt="cat energy.">
       </a>
 
       <ul class="social">

@@ -140,6 +140,7 @@ input[type=tel] {
 .field-contact {
   position: relative;
   border: none;
+  margin-bottom: 40px;
 
   &::after {
     content: "";
@@ -173,13 +174,10 @@ input[type=tel] {
   font-size: 24px;
   line-height: 26px;
   font-family: $font;
-  color: #000000;
-  padding-top: 26px;
-  padding-bottom: 35px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px;
   background-color: #ffffff;
   position: relative;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -286,7 +284,7 @@ input[type=tel] {
     width: 3000px;
     background-color: $color-bg-item;
     position: absolute;
-    top: -47px;
+    top: -56px;
     left: 20px;
     z-index: -1;
 
@@ -299,6 +297,11 @@ input[type=tel] {
 textarea {
   width: 100%;
   border: 1px solid #e7e7e7;
+  padding: 20px;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
 
   &::placeholder {
     font-family: $font;
