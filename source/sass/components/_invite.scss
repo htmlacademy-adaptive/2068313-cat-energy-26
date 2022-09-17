@@ -36,6 +36,7 @@
     line-height: 26px;
     width: 200px;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 5px;
   }
@@ -73,6 +74,10 @@
     padding-left: 10px;
     padding-top: 6px;
   }
+}
+
+.invite-top {
+  padding-top: 0;
 }
 
 .location {

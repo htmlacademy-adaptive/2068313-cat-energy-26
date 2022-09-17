@@ -19,6 +19,7 @@
   border-top: 1px solid #ebebeb;
   padding-top: 10px;
   display: grid;
+  height: 208px;
   grid-template-columns: 140px 140px;
   grid-template-areas: "img table"
     "img table"
@@ -46,6 +47,7 @@
 }
 
 .card__picture {
+  padding-top: 20px;
   grid-area: img;
   place-self: center;
 }
@@ -79,8 +81,9 @@
 
 .card__button {
   grid-area: btn;
-  margin-top: 22px;
-  margin-bottom: 20px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -100,7 +103,7 @@
   text-transform: uppercase;
   color: #222222;
   text-align: left;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -119,8 +122,8 @@
 
 .table__desc {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 0;
   text-align: left;
   color: $color-txt-black;
 
@@ -134,10 +137,12 @@
   }
 }
 
+
+.table__desc-m {
+  text-align: right;
+  padding-left: 63px;
 @media (min-width: $tablet-width) {
-  .table__desc-m {
-    text-align: right;
-  }
+ }
 }
 
 .card-add {

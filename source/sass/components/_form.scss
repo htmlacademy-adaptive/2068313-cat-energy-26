@@ -1,5 +1,13 @@
 .form {
   overflow: hidden;
+
+  &__user-radio {
+
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .form__title {
@@ -15,20 +23,34 @@
     border: none;
     font-size: 60px;
     padding: 50px;
+    padding-left: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-left: 30px;
   }
 }
 
 .form__desc {
-  padding-left: 60px;
-  padding-bottom: 40px;
+  padding-top: 19px;
+  padding-bottom: 38px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: $color-txt-black;
 
   @media (min-width: $tablet-width) {
+    text-transform: uppercase;
+    padding-top: 4px;
+    padding-left: 70px;
+    padding-bottom: 65px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
   }
 }
 
@@ -40,39 +62,51 @@
 
 .field-user {
   margin: 0;
-  padding: 0 20px;
+  margin-bottom: 10px;
+  padding: 0;
   border: none;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    // margin-bottom: 40px;
-    padding: 0 30px;
+    padding: 0 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 737px;
+    padding-left: 0;
   }
 }
 
 .field-radio {
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-left: 0;
+  margin-left: -8px;
   border: none;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  // margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    width: 630px;
+    padding-top: 23px;
+    padding-bottom: 8px;
     border: 1px solid #e7e7e7;
+    margin-top: 48px;
+    margin-left: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
-    padding: 0;
+    margin-right: 44px;
+    margin-top: 0;
+    padding-top: 26px;
+    height: 200px;
   }
 }
 
 .input-desc {
-  padding-top: 10px;
+  padding-top: 0;
   white-space: nowrap;
   font-family: $font;
   font-weight: 400;
@@ -83,14 +117,16 @@
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin-bottom: 21px;
   }
 }
 
@@ -110,7 +146,7 @@ input[type=tel] {
   align-items: center;
   text-transform: uppercase;
   color: $color-txt-gray;
-  margin-left: 13px;
+  margin-left: 14px;
   border: none;
   border: 1px solid #E7E7E7;
   outline: none;
@@ -130,6 +166,9 @@ input[type=tel] {
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    margin-left: 16px;
   }
 
 
@@ -140,7 +179,13 @@ input[type=tel] {
 .field-contact {
   position: relative;
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 7px;
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+    margin-top: 45px;
+  }
 
   &::after {
     content: "";
@@ -154,8 +199,12 @@ input[type=tel] {
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      top: -78px;
+      top: -88px;
       left: -500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -91px;
     }
   }
 
@@ -165,7 +214,8 @@ input[type=tel] {
     grid-template-rows: auto auto;
     grid-template-areas: "title title"
       "email tel";
-    column-gap: 78px;
+    margin-top: 0;
+    margin-left: 42px;
   }
 }
 
@@ -174,10 +224,10 @@ input[type=tel] {
   font-size: 24px;
   line-height: 26px;
   font-family: $font;
-  padding: 0 15px;
   background-color: #ffffff;
   position: relative;
-  margin-bottom: 40px;
+  padding-right: 15px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -185,29 +235,38 @@ input[type=tel] {
   }
 }
 
+
 .legend-title-contact {
-  width: 195px;
+  width: 200px;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   font-family: $font;
   color: #000000;
-  padding-top: 26px;
+  padding-top: 28px;
   padding-bottom: 35px;
   padding-right: 10px;
-  padding-left: 10px;
   background-color: #ffffff;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 540px;
+    width: 592px;
     font-size: 36px;
     line-height: 36px;
     margin: 30px 0;
+    padding-left: 37px;
+    margin-bottom: 43px;
   }
 }
 
   /*stylelint-disable */
+  .input_cond {
+    margin-right: 38px;
+    @media (min-width: $desktop-width) {
+     margin-left: 5px;
+    }
+  }
+
 .input_cond:focus ~ .input-email-letter{
   background-color: #68B738;;
 }
@@ -227,9 +286,14 @@ input[type=tel] {
 
 .input-email {
   position: relative;
+  @media (min-width: $tablet-width) {
+   margin-left: 42px;
+  }
 
   @media (min-width: $desktop-width) {
+    margin-left: 38px;
     grid-area: email;
+    width: 602px;
   }
 }
 
@@ -245,19 +309,27 @@ input[type=tel] {
   position: absolute;
   top: 35%;
   right: 5%;
+  @media (min-width: $tablet-width) {
+   right: 8%;
+   }
 }
 
 .input-tel {
   position: relative;
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+   }
 
   @media (min-width: $desktop-width) {
+    width: 610px;
+    margin-left: 44px;
     grid-area: tel;
   }
 }
 
 .input-email-tel{
     display: inline-block;
-    width: 25px;
+    width: 29px;
     height: 20px;
     -webkit-mask-image: url(../img/sprite.svg#phone);
     mask-image: url(../img/sprite.svg#phone);
@@ -267,8 +339,14 @@ input[type=tel] {
     mask-repeat: no-repeat;
     background-color: #222222;
     position: absolute;
-    top: 35%;
+    top: 25%;
     right: 3%;
+    @media (min-width: $tablet-width) {
+      right: 7%;
+  }
+  @media(min-width: $desktop-width) {
+    right: 8%;
+  }
 }
 
   /*stylelint-enable */
@@ -284,7 +362,7 @@ input[type=tel] {
     width: 3000px;
     background-color: $color-bg-item;
     position: absolute;
-    top: -56px;
+    top: -47px;
     left: 20px;
     z-index: -1;
 
@@ -292,16 +370,40 @@ input[type=tel] {
       left: -500px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 41px;
+  }
+}
+
+.field-comment > .legend-title {
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
 }
 
 textarea {
   width: 100%;
   border: 1px solid #e7e7e7;
-  padding: 20px;
+  padding: 13px;
+  margin-bottom: 21px;
   font-family: $font;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 38px;
+    margin-top: 38px;
+    width: 633px;
+    height: 178px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 
   &::placeholder {
     font-family: $font;
@@ -323,6 +425,7 @@ textarea {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 20px;
 
   &::after {
     content: "";
@@ -331,24 +434,38 @@ textarea {
     width: 3000px;
     background-color: $color-bg-item;
     position: absolute;
-    top: -47px;
+    top: -45px;
     left: 20px;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
+      top: -49px;
       left: -500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -71px;
     }
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 37px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: end;
+    margin-left: 43px;
+}
+
+.field-addition > .legend-title {
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
   }
 }
 
@@ -360,12 +477,15 @@ textarea {
 
   @media (min-width: $tablet-width) {
     height: 52px;
-    margin: 10px;
+    margin-top: 12px;
+    margin-left: 41px;
+    max-width: 280px;
+    font-size: 20px;
     margin-right: 60px;
-    max-width: 290px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 31px;
     height: 52px;
     max-width: 570px;
   }
@@ -373,6 +493,22 @@ textarea {
 
 .form__desc-bottom {
   text-align: center;
+  margin-top: 0;
+  font-family: serif;
+  margin-bottom: -5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    text-transform: inherit;
+    margin-top: 15px;
+    margin-right: auto;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+    padding-left: 15px;
+  }
 }
 
 .for-users {
@@ -384,7 +520,15 @@ textarea {
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: flex-start;
-    padding: 50px 30px;
+    padding: 15px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: 48px;
+    padding-bottom: 33px;
   }
 }
 
@@ -399,6 +543,7 @@ textarea {
 
 .invite-bg {
   padding: 0 20px;
+  padding-bottom: 10px;
   background: #f2f2f2;
   display: flex;
   justify-content: space-between;
@@ -406,12 +551,15 @@ textarea {
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 0 30px;
-    margin-top: 60px;
+    padding: 50px 70px 40px 70px;
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
     background: #ffffff;
+    margin-top: 97px;
+    padding-left: 80px;
+    padding-right: 75px;
   }
 }
 
@@ -431,6 +579,13 @@ textarea {
     height: 14px;
     margin-left: -32px;
     margin-right: 18px;
+    @media (min-width: $tablet-width) {
+      margin-left: -48px;
+      margin-top: 2px;
+      margin-right: 32px;
+      width: 16px;
+      height: 16px;
+    }
   }
 
   & + label {
@@ -455,12 +610,36 @@ textarea {
       width: 30px;
       height: 30px;
       margin: 0 10px;
+      @media (min-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+        margin-left: 25px;
+        margin-right: 20px;
+      }
     }
   }
 }
 
 .input-desc-p{
-  padding: 20px 0;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+}
+
+
+.input-desc.input-desc-l{
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+    margin-right: 35px;
+    margin-top: 25px;
+    margin-left: 38px;
+    margin-bottom: 6px;
+    font-size: 21px;
+   }
+  @media (min-width: $desktop-width) {
+   margin: 0 auto;
+  }
 }
 
 .input-checkbox {
@@ -475,8 +654,15 @@ textarea {
     background-size: 100%;
     width: 18px;
     height: 14px;
-    margin-left: -34px;
-    margin-right: 16px;
+    margin-left: -38px;
+    margin-right: 18px;
+
+    @media(min-width: $tablet-width){
+      width: 25px;
+      height: 22px;
+      margin-right: 25px;
+      margin-left: -46px;
+    }
   }
 
   & + label {
@@ -496,7 +682,13 @@ textarea {
       padding: 10px;
       width: 30px;
       height: 30px;
-      margin: 0 10px;
+      margin: 0;
+      margin-right: 16px;
+      @media(min-width: $tablet-width){
+        width: 40px;
+        height: 40px;
+        margin-right: 17px;
+      }
 
     }
 
@@ -507,4 +699,12 @@ textarea {
   }
 
 }
+
+.location-catalog{
+height: 358px;
+}
+
+.location-form{
+  height: 340px;
+  }
   /*stylelint-enable */
