@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 38px;
+    margin-top: 63px;
   }
 }
 
@@ -43,7 +43,8 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin-left: 20px;
+    margin-left: 26px;
+    margin-top: 22px;
     border: none;
     justify-content: stretch;
     width: auto;
@@ -140,6 +141,9 @@
   margin-right: -7px;
   margin-top: 22px;
   margin-bottom: 22px;
+  @media (min-width: $tablet-width) {
+  margin-top: 48px;
+  }
 }
 
   /*stylelint-enable */
@@ -165,5 +169,6 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 15px;
+    margin-top: 31px;
   }
 }

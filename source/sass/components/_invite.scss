@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 70px;
+    padding: 37px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,7 +11,7 @@
     height: 198px;
     background-color: #ffffff;
     left: calc((100% - 1220px) / 2);
-    margin-top: 100px;
+    margin-top: 97px;
     z-index: 99;
     position: absolute;
     padding: 45px 78px;
@@ -20,17 +20,17 @@
 
 .invite__title {
   margin-top: 26px;
-  padding-right: 28px;
+  margin-bottom: 25px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  width: 145px;
+  width: 222px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 11px;
+    margin-top: 25px;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 5px;
+    margin-top: 22px;
   }
 }
 
@@ -51,7 +51,8 @@
 }
 
 .invite__desc {
-  padding-top: 13px;
+  padding-top: 4px;
+  margin: 0;
   font-family: $font-fallback;
   font-style: normal;
   font-weight: 400;
@@ -59,20 +60,21 @@
   line-height: 20px;
   text-align: left;
   color: $color-txt-gray;
-  display: none;
+  display: block;
 
   @media (min-width: $tablet-width) {
+    width: 180px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    margin-top: -6px;
+    padding-bottom: 20px;
     padding-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    padding-left: 10px;
-    padding-top: 6px;
+    padding-left: 23px;
+    padding-top: 10px;
   }
 }
 
@@ -82,10 +84,10 @@
 
 .location {
   overflow: hidden;
-  height: 340px;
+  height: 357px;
 
   @media (min-width: $tablet-width) {
-    height: 420px;
+    height: 400px;
   }
 }
 

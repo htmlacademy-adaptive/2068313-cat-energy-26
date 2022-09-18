@@ -1,5 +1,5 @@
 .explanation {
-  margin-bottom: 40px;
+  margin-bottom: 53px;
 }
 
 .explanation__content {
@@ -8,13 +8,14 @@
     grid-template-columns: repeat(2, 1fr);
     margin: 0;
     padding: 0;
-    row-gap: 56px;
+    row-gap: 37px;
     column-gap: 59px;
     counter-reset: li-counter;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
@@ -39,7 +40,6 @@
   min-height: 80px;
   position: relative;
   list-style: none;
-  margin-bottom: -19px;
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
@@ -59,23 +59,26 @@
     font-size: 280px;
     line-height: 280px;
     position: absolute;
-    top: 0;
+    top: 35px;
     right: 0;
+    left: 110px;
     z-index: -1;
   }
 }
 
   /*stylelint-disable */
-
-.explanation__desc {
+.explanation__desc
+ {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
+  font-family: arial;
   line-height: 18px;
   color: #444444;
+  margin-top: 0;
   margin-left: 40px;
   margin-bottom: 0;
   padding-bottom: 20px;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {

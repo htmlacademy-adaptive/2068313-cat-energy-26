@@ -4,14 +4,14 @@
   background: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, #ffffff 59%, #eaeaea 59%, #eaeaea 41%);
+    background: linear-gradient(to bottom, #ffffff 58%, #eaeaea 58%, #eaeaea 42%);
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     position: relative;
     min-height: 603px;
-    background: linear-gradient(to bottom, #ffffff 31.5%, #eaeaea 31.5%, #eaeaea 68.5%);
+    background: linear-gradient(to bottom, #ffffff 28.5%, #eaeaea 28.5%, #eaeaea 71.5%);
   }
 }
 
@@ -35,11 +35,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  padding-top: 28px;
+  margin-top: 25px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 46px;
     margin-bottom: 63px;
     font-size: 60px;
     line-height: 60px;
@@ -47,7 +47,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 80px;
-    margin-top: 32px;
+    margin-top: 3px;
   }
 }
 
@@ -70,7 +70,8 @@
 
   @media (min-width: $desktop-width) {
     width: 435px;
-    margin-bottom: 52px;
+    padding-top: 5px;
+    margin-bottom: 58px;
   }
 }
 
@@ -209,8 +210,21 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-.result__subtitle-days{
- margin-left: 10px;
+
+.result__subtitle-days {
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+  }
 }
+
+.example__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
