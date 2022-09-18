@@ -11,6 +11,11 @@
     margin-bottom: 77px;
     padding-top: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
+    margin-bottom: 73px;
+  }
 }
 
 .addition {
@@ -28,15 +33,19 @@
     left: 20px;
     z-index: -1;
 
+    @media (min-width: $tablet-width) {
+      top: 61px;
+      left: -100px;
+    }
+
     @media (min-width: $desktop-width) {
-      top: 76px;
+      top: 72px;
       left: -100px;
     }
   }
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin-bottom: 86px;
   }
 }
 
@@ -58,6 +67,7 @@
     border-right: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
     padding: 2px 38px;
+    margin-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,12 +75,21 @@
     border-top: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
     padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.addition__wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    width: 100%;
   }
 }
 
@@ -87,11 +106,18 @@
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 20px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 8px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
+    padding-top: 18px;
+    margin-left: -39px;
   }
 }
 
@@ -104,12 +130,20 @@
   text-transform: uppercase;
   color: #222222;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
     font-size: 20px;
     line-height: 20px;
-    display: inline-block;
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
     margin-right: auto;
-    padding: 4px 0;
+    padding: 3px 0;
   }
 }
 
@@ -121,10 +155,7 @@
   justify-content: space-between;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 288px;
-    margin-left: 160px;
+    width: 330px;
   }
 }
 
@@ -136,21 +167,35 @@
   color: #444444;
   margin-top: 0;
 
+  @media (min-width: $tablet-width) {
+    margin: 12px 0 0 48px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
+    margin-top: 10px;
+    margin-left: 6px;
     margin-bottom: 0;
+    padding: 0 20px;
   }
 }
 
 .addition__button {
   margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    font-size: 16px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
     max-width: 244px;
     margin: 0;
-    margin-left: 38px;
+    margin-left: 20px;
   }
 }
 
@@ -176,6 +221,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 75px;
     height: 200px;
     flex-direction: row;
     justify-content: space-between;
@@ -195,7 +241,7 @@
     background-repeat: no-repeat;
     background-size: 100% 280px;
     background-position: center;
-    padding: 60px 43px;
+    padding: 50px 43px 41px 43px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,9 +249,9 @@
     margin: 0;
     position: absolute;
     width: 250px;
-    height: 290px;
-    top: 140px;
-    left: calc(100% - 250px);
+    height: 289px;
+    top: 165px;
+    left: calc(100% - 359px);
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/img/bag-mobile@2x.png);
@@ -225,13 +271,15 @@
 
   @media (min-width: $tablet-width) {
     width: 165px;
-    margin-right: 50px;
+    margin-right: 76px;
+    margin-top: 5px;
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
     margin: 0;
+    margin-top: 50px;
   }
 }
 
@@ -245,12 +293,13 @@
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin-left: 24px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 20px;
+
   }
 }
 
@@ -279,11 +328,15 @@
 }
 
 .invite__desc-catalog {
+  width: 210px;
   padding-left: 28px;
   padding-top: 5px;
 }
 
 .invite__title-catalog {
-  padding-top: 7px;
   width: 170px;
+}
+
+.location-catalog {
+  height: 488px;
 }

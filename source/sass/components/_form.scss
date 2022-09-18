@@ -161,7 +161,6 @@ input[type=tel] {
   &:not(:placeholder-shown):not(:focus):invalid{
     box-shadow: 0 0 0 2px #FF8282;
   }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -171,12 +170,11 @@ input[type=tel] {
   }
 
   @media (min-width: $desktop-width) {
-  padding-left: 22px;
+    padding-left: 22px;
   }
-
 }
 
-  /*stylelint-enable */
+/*stylelint-enable */
 
 .field-contact {
   position: relative;
@@ -298,7 +296,7 @@ input[type=tel] {
   position: relative;
 
   @media (min-width: $tablet-width) {
-   margin-left: 42px;
+    margin-left: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -308,7 +306,7 @@ input[type=tel] {
   }
 }
 
-.input-email-letter{
+.input-email-letter {
   display: inline-block;
   width: 20px;
   height: 16px;
@@ -322,16 +320,16 @@ input[type=tel] {
   right: 5%;
 
   @media (min-width: $tablet-width) {
-   right: 8%;
-   }
-}
+    right: 8%;
+    }
+  }
 
 .input-tel {
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
-   }
+      margin-left: 40px;
+    }
 
   @media (min-width: $desktop-width) {
     width: 610px;
@@ -566,7 +564,7 @@ textarea {
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 30px 70px;
+    padding: 27px 70px;
     margin-top: 16px;
   }
 
@@ -657,10 +655,10 @@ textarea {
     font-size: 20px;
     line-height: 30px;
     font-family: $font;
-   }
+  }
 
   @media (min-width: $desktop-width) {
-   margin: 0 auto;
+    margin: 0 auto;
   }
 }
 
@@ -711,15 +709,12 @@ textarea {
         height: 40px;
         margin-right: 17px;
       }
-
     }
 
     &:disabled{
       opacity: 0.3;
     }
-
   }
-
 }
 
 .location-catalog{
