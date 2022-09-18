@@ -2,8 +2,6 @@
   overflow: hidden;
 
   &__user-radio {
-
-
     @media (min-width: $desktop-width) {
       margin-bottom: 9px;
     }
@@ -33,15 +31,15 @@
 }
 
 .form__desc {
-  padding-top: 19px;
-  padding-bottom: 41px;
+  text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 37px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
   color: $color-txt-black;
 
   @media (min-width: $tablet-width) {
-    text-transform: uppercase;
     padding-top: 4px;
     padding-left: 70px;
     padding-bottom: 65px;
@@ -81,6 +79,7 @@
 .field-radio {
   padding-top: 22px;
   padding-left: 0;
+  padding-bottom: 6px;
   margin-left: -8px;
   border: none;
   display: flex;
@@ -90,8 +89,8 @@
 
   @media (min-width: $tablet-width) {
     width: 630px;
-    padding-top: 23px;
-    padding-bottom: 8px;
+    padding-top: 24px;
+    padding-bottom: 11px;
     border: 1px solid #e7e7e7;
     margin-top: 48px;
     margin-left: 42px;
@@ -171,6 +170,9 @@ input[type=tel] {
     margin-left: 16px;
   }
 
+  @media (min-width: $desktop-width) {
+  padding-left: 22px;
+  }
 
 }
 
@@ -179,7 +181,7 @@ input[type=tel] {
 .field-contact {
   position: relative;
   border: none;
-  margin-bottom: 7px;
+  margin-bottom: 11px;
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
@@ -227,7 +229,7 @@ input[type=tel] {
   background-color: #ffffff;
   position: relative;
   padding-right: 15px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -244,8 +246,8 @@ input[type=tel] {
   font-family: $font;
   color: #000000;
   padding-left: 0;
-  padding-top: 32px;
-  padding-bottom: 35px;
+  padding-top: 28px;
+  padding-bottom: 33px;
   padding-right: 10px;
   background-color: #ffffff;
   position: relative;
@@ -256,17 +258,22 @@ input[type=tel] {
     line-height: 36px;
     margin: 30px 0;
     padding-left: 37px;
-    margin-bottom: 37px;
+    margin-bottom: 42px;
+    padding-top: 30px;
   }
 }
 
   /*stylelint-disable */
   .input_cond {
-    margin-right: 38px;
-    width: 216px;
+    @media (min-width: $tablet-width) {
+      margin-right: 38px;
+
+    }
     @media (min-width: $desktop-width) {
+      margin-right: 38px;
+      width: 216px;
       width: 100%;
-     margin-left: 5px;
+      margin-left: 5px;
     }
   }
 
@@ -289,6 +296,7 @@ input[type=tel] {
 
 .input-email {
   position: relative;
+
   @media (min-width: $tablet-width) {
    margin-left: 42px;
   }
@@ -312,6 +320,7 @@ input[type=tel] {
   position: absolute;
   top: 35%;
   right: 5%;
+
   @media (min-width: $tablet-width) {
    right: 8%;
    }
@@ -319,6 +328,7 @@ input[type=tel] {
 
 .input-tel {
   position: relative;
+
   @media (min-width: $tablet-width) {
     margin-left: 40px;
    }
@@ -342,11 +352,13 @@ input[type=tel] {
     mask-repeat: no-repeat;
     background-color: #222222;
     position: absolute;
-    top: 25%;
+    top: 28%;
     right: 3%;
+
     @media (min-width: $tablet-width) {
       right: 7%;
   }
+
   @media(min-width: $desktop-width) {
     right: 8%;
   }
@@ -390,7 +402,7 @@ textarea {
   width: 100%;
   border: 1px solid #e7e7e7;
   padding: 13px;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
   font-family: $font;
   font-weight: 400;
   font-size: 20px;
@@ -398,7 +410,7 @@ textarea {
 
   @media (min-width: $tablet-width) {
     margin-left: 38px;
-    margin-top: 38px;
+    margin-top: 42px;
     width: 633px;
     height: 178px;
     padding-left: 20px;
@@ -453,9 +465,10 @@ textarea {
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 37px;
+    margin-top: 33px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -477,9 +490,12 @@ textarea {
 
 .form-button {
   margin: 0 auto;
+  margin-top: 7px;
   font-family: $font;
   border: none;
   max-width: 400px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     height: 52px;
@@ -500,8 +516,9 @@ textarea {
 .form__desc-bottom {
   text-align: center;
   margin-top: 0;
-  font-family: serif;
-  margin-bottom: -5px;
+  font-family: $font-fallback;
+  text-transform: capitalize;
+  margin-bottom: -9px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -512,8 +529,9 @@ textarea {
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 19px;
-    padding-left: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -538,18 +556,9 @@ textarea {
   }
 }
 
-.invite__desc {
-  display: block;
-  width: 170px;
-
-  @media (min-width: $tablet-width) {
-    width: 170px;
-  }
-}
-
 .invite-bg {
   padding: 0 20px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   background: #f2f2f2;
   display: flex;
   justify-content: space-between;
@@ -557,13 +566,14 @@ textarea {
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 36px 70px 40px 70px;
-    margin-top: 12px;
+    padding: 30px 70px;
+    margin-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
     background: #ffffff;
     margin-top: 97px;
+    padding-top: 40px;
     padding-left: 80px;
     padding-right: 75px;
   }
@@ -583,8 +593,8 @@ textarea {
     border-radius: 50%;
     width: 14px;
     height: 14px;
-    margin-left: -32px;
-    margin-right: 18px;
+    margin-left: -37px;
+    margin-right: 23px;
     @media (min-width: $tablet-width) {
       margin-left: -48px;
       margin-top: 2px;
@@ -616,7 +626,7 @@ textarea {
       padding: 10px;
       width: 30px;
       height: 30px;
-      margin: 0 10px;
+      margin: 0 15px 0 8px;
       @media (min-width: $tablet-width) {
         width: 40px;
         height: 40px;
@@ -636,14 +646,19 @@ textarea {
 
 
 .input-desc.input-desc-l{
+
   @media (min-width: $tablet-width) {
     margin-left: 25px;
     margin-right: 35px;
     margin-top: 25px;
     margin-left: 38px;
     margin-bottom: 6px;
-    font-size: 21px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $font;
    }
+
   @media (min-width: $desktop-width) {
    margin: 0 auto;
   }
@@ -708,13 +723,16 @@ textarea {
 }
 
 .location-catalog{
-height: 358px;
+height: 350px;
 }
 
 .location-form{
-  height: 395px;
+  height: 360px;
   @media(min-width: $tablet-width){
-    height: 400px;
+    height:395px;
+  }
+  @media(min-width: $desktop-width){
+    height:405px;
   }
   }
   /*stylelint-enable */

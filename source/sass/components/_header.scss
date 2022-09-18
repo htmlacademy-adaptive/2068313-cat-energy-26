@@ -145,9 +145,13 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 10px;
-    padding-left: 35px;
+    padding-left: 37px;
     border: none;
     padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
   }
 }
 
