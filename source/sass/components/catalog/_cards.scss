@@ -1,7 +1,7 @@
 .cards {
   display: grid;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
@@ -17,10 +17,9 @@
 
 .card {
   border-top: 1px solid #ebebeb;
-  padding-top: 10px;
   display: grid;
   height: 208px;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: 136px 144px;
   grid-template-areas: "img table"
     "img table"
     "btn btn";
@@ -38,6 +37,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: auto;
     max-width: 350px;
   }
 
@@ -47,15 +47,17 @@
 }
 
 .card__picture {
-  padding-top: 20px;
+  padding-top: 6px;
   grid-area: img;
   place-self: center;
 }
 
 .card__img {
+  display: flex;
+
   @media (min-width: $tablet-width) {
-    width: 161px;
-    height: 172px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -69,8 +71,8 @@
 
 .card__table {
   grid-area: table;
-  margin-top: 11px;
-  margin-right: 10px;
+  height: 50px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -80,10 +82,10 @@
 }
 
 .card__button {
+  height: 40px;
   grid-area: btn;
-  margin-top: 24px;
-  margin-bottom: 25px;
   font-size: 16px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -96,6 +98,8 @@
 }
 
 .card__title {
+  padding-left: 3px;
+  font-family: $font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -103,7 +107,7 @@
   text-transform: uppercase;
   color: #222222;
   text-align: left;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -121,9 +125,10 @@
 }
 
 .table__desc {
+  font-family: "Arial";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 0;
+  font-size: 12px;
+  line-height: 12px;
   text-align: left;
   color: $color-txt-black;
 
@@ -141,8 +146,6 @@
 .table__desc-m {
   text-align: right;
   padding-left: 63px;
-@media (min-width: $tablet-width) {
- }
 }
 
 .card-add {
@@ -167,7 +170,7 @@
   background-image: url(../img/sprite.svg#plus);
   width: 30px;
   height: 30px;
-  margin-top: 25px;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     background-repeat: no-repeat;
@@ -199,6 +202,7 @@
 
 .card-add__desc {
   margin: 0;
+  font-family: 'Arial';
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;

@@ -34,7 +34,7 @@
 
 .form__desc {
   padding-top: 19px;
-  padding-bottom: 38px;
+  padding-bottom: 41px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -116,7 +116,7 @@
   color: $color-txt-gray;
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
@@ -243,7 +243,8 @@ input[type=tel] {
   line-height: 26px;
   font-family: $font;
   color: #000000;
-  padding-top: 28px;
+  padding-left: 0;
+  padding-top: 32px;
   padding-bottom: 35px;
   padding-right: 10px;
   background-color: #ffffff;
@@ -255,14 +256,16 @@ input[type=tel] {
     line-height: 36px;
     margin: 30px 0;
     padding-left: 37px;
-    margin-bottom: 43px;
+    margin-bottom: 37px;
   }
 }
 
   /*stylelint-disable */
   .input_cond {
     margin-right: 38px;
+    width: 216px;
     @media (min-width: $desktop-width) {
+      width: 100%;
      margin-left: 5px;
     }
   }
@@ -403,6 +406,7 @@ textarea {
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-top: 42px;
   }
 
   &::placeholder {
@@ -456,6 +460,8 @@ textarea {
 
   @media (min-width: $desktop-width) {
     margin-left: 43px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .field-addition > .legend-title {
@@ -551,7 +557,7 @@ textarea {
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 50px 70px 40px 70px;
+    padding: 36px 70px 40px 70px;
     margin-top: 12px;
   }
 
@@ -595,6 +601,7 @@ textarea {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
+    margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -705,7 +712,9 @@ height: 358px;
 }
 
 .location-form{
-  height: 340px;
+  height: 395px;
+  @media(min-width: $tablet-width){
+    height: 400px;
+  }
   }
   /*stylelint-enable */
-}
