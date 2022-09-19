@@ -47,6 +47,11 @@
   @media (min-width: $tablet-width) {
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-bottom: 85px;
+  }
 }
 
 .addition__cards {
@@ -66,8 +71,7 @@
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
-    padding: 2px 38px;
-    margin-bottom: 6px;
+    padding: 2px 38px 8px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -221,7 +225,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 75px;
+    margin-top: 68px;
     height: 200px;
     flex-direction: row;
     justify-content: space-between;
@@ -334,9 +338,17 @@
 }
 
 .invite__title-catalog {
-  width: 170px;
+  margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+  }
 }
 
 .location-catalog {
-  height: 488px;
+  height: 366px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

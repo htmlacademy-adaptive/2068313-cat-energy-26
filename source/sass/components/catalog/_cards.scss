@@ -1,3 +1,9 @@
+.goods {
+  @media (min-width: $desktop-width) {
+    padding: 0 18px;
+  }
+}
+
 .cards {
   display: grid;
   row-gap: 11px;
@@ -47,6 +53,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin: 0 auto;
   }
 }
 

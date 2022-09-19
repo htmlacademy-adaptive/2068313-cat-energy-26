@@ -4,8 +4,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    border: none;
     margin-top: 15px;
   }
 
@@ -188,7 +190,7 @@
 .nav__link--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $color-bg-item;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
   }
 }
 
@@ -209,10 +211,10 @@
   }
 }
 
-// .nav__toggle:hover,
-// .nav:focus-within > .nav__wrapper {
-//   display: flex;
-// }
+.nav__toggle:hover,
+.nav:focus-within > .nav__wrapper {
+  display: flex;
+}
 
 .nav {
   background: none;
