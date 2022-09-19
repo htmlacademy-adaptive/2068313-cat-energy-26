@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script defer src="js/script.js"></script>
 </head>
 
@@ -20,7 +20,11 @@
     <a href="index.html" class="main-header__logo">
       <span class="main-header__logo-img"></span>
 
-      <img class="main-header__logo-text" src="img/sprite.svg#logo-title" width="101" height="20" alt="Cat energy.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-big.svg" width="202" height="60" alt="логотип компании.">
+        <source media="(min-width: 768px)" srcset="img/logo-middle.svg" width="174" height="52" alt="логотип компании.">
+        <img class="main-header__logo-text" src="img/logo-title.svg" width="101" height="18" alt="логотип компании.">
+      </picture>
     </a>
 
     <nav class="nav">
@@ -86,7 +90,8 @@
           <label class="input-desc input-desc-p" for="mass"><span class="radio-bg"></span>Набор массы</label>
 
           <input class="input-radio" id="und" type="radio" name="radio" value="und">
-          <label class="input-desc input-desc-p" for="und"><span class="radio-bg"></span>Не знаю (Нужен ваш совет)</label>
+          <label class="input-desc input-desc-p" for="und"><span class="radio-bg"></span>Не знаю (Нужен ваш
+            совет)</label>
 
         </fieldset>
 
@@ -115,7 +120,7 @@
           Комментарий
         </legend>
         <label>
-          <textarea name="about" id="tect-about" cols="30" rows="10"
+          <textarea name="about" id="tect-about" cols="30" rows="4"
             placeholder="Расскажите обо всех повАдках кота"></textarea>
         </label>
       </fieldset>
@@ -127,16 +132,16 @@
         </legend>
 
         <input type="checkbox" class="input-checkbox" id="shugar" name="shugar" value="shugar" checked>
-        <label class="input-desc" for="shugar"><span class="checkbox-bg"></span>сахарозаменитель</label>
+        <label class="input-desc input-desc-l" for="shugar"><span class="checkbox-bg"></span>сахарозаменитель</label>
 
         <input type="checkbox" class="input-checkbox" id="water" name="water" value="water">
-        <label class="input-desc" for="water"><span class="checkbox-bg"></span>питьевая вода</label>
+        <label class="input-desc input-desc-l" for="water"><span class="checkbox-bg"></span>питьевая вода</label>
 
         <input type="checkbox" class="input-checkbox" id="milk" name="milk" value="milk">
-        <label class="input-desc" for="milk"><span class="checkbox-bg"></span>молоко</label>
+        <label class="input-desc input-desc-l" for="milk"><span class="checkbox-bg"></span>молоко</label>
 
         <input type="checkbox" class="input-checkbox" id="vitamins" name="vitamins" value="vitamins">
-        <label class="input-desc" for="vitamins"><span class="checkbox-bg"></span>витамины</label>
+        <label class="input-desc input-desc-l" for="vitamins"><span class="checkbox-bg"></span>витамины</label>
 
       </fieldset>
 
@@ -147,12 +152,16 @@
 
     </form>
 
-    <div class="invite invite-bg">
-      <p class="invite__title">приглашаем к сотрудничеству дилеров!</p>
-      <p class="invite__desc">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="invite invite-bg container">
+      <p class="invite__title">приглашаем<br class="invite"> к сотрудничеству дилеров!</p>
+      <div>
+        <p class="invite__desc">ул. Большая Конюшенная, д. 19/8<br></p>
+
+        <p class="invite__desc invite-top"> Санкт-Петербург</p>
+      </div>
     </div>
 
-    <div class="location">
+    <div class="location location-form">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.61969609936!2d30.329148!3d59.937868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee3abe449bc142d7!2z0JzQuNGF0LDQudC70L7QstGB0LrQuNC5INGC0LXQsNGC0YA!5e0!3m2!1sru!2s!4v1658948780658!5m2!1sru!2s"
         width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
@@ -163,8 +172,8 @@
 
   <footer class="footer-page">
     <div class="container footer-page__container">
-      <a class="footer-page__logo">
-        <img src="img/sprite.svg#logo-title" width="128" height="24" alt="cat energy.">
+      <a class="footer-page__logo" href="index.html">
+        <img src="img/logo-title.svg" width="128" height="24" alt="cat energy.">
       </a>
 
       <ul class="social">

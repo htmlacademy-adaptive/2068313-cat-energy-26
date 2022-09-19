@@ -3,61 +3,92 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 70px;
+    padding: 31px 70px 25px 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: 565px;
     height: 198px;
     background-color: #ffffff;
-    left: calc((100vh - 160px) / 2);
-    margin-top: 100px;
+    left: calc((100% - 1220px) / 2);
+    margin-top: 97px;
     z-index: 99;
     position: absolute;
+    padding: 45px 78px;
   }
 }
 
 .invite__title {
-  padding: 15px 0;
-  padding-right: 40px;
+  margin-top: 26px;
+  margin-bottom: 25px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  width: 170px;
+  width: 222px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 25px;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+    width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 22px;
+  }
+}
+
+.invite-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
 .invite__desc {
+  padding-top: 5px;
   font-family: $font-fallback;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-align: left;
   color: $color-txt-gray;
-  display: none;
+  display: block;
 
   @media (min-width: $tablet-width) {
-    font-size: 14px;
+    width: 180px;
+    font-size: 16px;
     line-height: 20px;
     text-align: right;
+    padding-bottom: 20px;
+    padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    padding-left: 23px;
+    padding-top: 10px;
   }
+}
+
+.invite-top {
+  margin-top: -14px;
+  padding-top: 0;
 }
 
 .location {
   overflow: hidden;
+  height: 363px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .location iframe {

@@ -1,15 +1,18 @@
 .slider {
   --comprasion: 50%;
-  margin: 0 auto;
-  margin-top: 40px;
   height: auto;
-  padding-bottom: 60px;
+  padding-bottom: 43px;
   position: relative;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-bottom: 28px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-left: auto;
-    margin-top: -435px;
+    margin-top: 30px;
+    margin-right: 0;
   }
 }
 
@@ -23,11 +26,11 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, #ffffff 22%, #eaeaea 22%, #eaeaea 78%);
+    background: linear-gradient(to bottom, #ffffff 29%, #eaeaea 29%, #eaeaea 71%);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to bottom, #ffffff 16%, #eaeaea 16%, #eaeaea 84%);
+    background: linear-gradient(to bottom, #ffffff 25%, #eaeaea 25%, #eaeaea 75%);
   }
 }
 
@@ -44,11 +47,19 @@
 
 .slider__img {
   display: block;
+  height: 260px;
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     width: 560px;
     height: auto;
-    margin-bottom: 95px;
+    margin-bottom: 72px;
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+    padding-top: 21px;
   }
 }
 
@@ -56,12 +67,12 @@
   /*stylelint-disable */
 
 .slider__range {
-  height: calc(100% - 75px);
+  height: calc(100% - 47px);
   width: 4px;
   background: #666666;
   border-radius: 2px;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: var(--comprasion);
   transition: background-image, background-color, opacity 0.5s;
 
@@ -87,11 +98,25 @@
     display: inline-block;
     cursor: pointer;
     background-image: url(../img/sprite.svg#slider-button);
-    width: 40px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 48px;
     height: 40px;
     position: absolute;
-    top: 45%;
-    right: -18px;
+    top: 43%;
+    right: -20px;
+    @media (min-width: $tablet-width) {
+      top: 47%;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    height: calc(100% - 142px);
+  }
+  @media (min-width: $desktop-width) {
+    top:21px;
+    height: calc(100% - 112px);
   }
 }
 

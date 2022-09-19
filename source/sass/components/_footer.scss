@@ -15,7 +15,7 @@
 
 .footer-page__logo {
   margin-bottom: 32px;
-  margin-top: 39px;
+  margin-top: 40px;
   cursor: pointer;
 
   &:hover {
@@ -25,12 +25,17 @@
   &:active {
     opacity: 0.5;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+  }
 }
 
 .social {
   list-style: none;
-  padding: 20px 30px;
+  padding: 18px 28px;
   margin: 0;
+  margin-top: -6px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -38,6 +43,8 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    margin-left: 26px;
+    margin-top: 22px;
     border: none;
     justify-content: stretch;
     width: auto;
@@ -49,11 +56,7 @@
   display: block;
   width: 28px;
   height: 22px;
-  margin: 0 15px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 20px;
-  }
+  margin: 0 12px;
 }
 
 .social__link:hover::before {
@@ -71,25 +74,28 @@
   &--vk::before {
     -webkit-mask-image: url(../img/sprite.svg#vk);
     mask-image: url(../img/sprite.svg#vk);
-    -webkit-mask-size: 100%;
-    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat:no-repeat;
     background-color: #666666;
+    margin-top: 2px;
   }
 
   &--youtube::before {
     -webkit-mask-image: url(../img/sprite.svg#youtube);
     mask-image: url(../img/sprite.svg#youtube);
-    -webkit-mask-size: 100%;
-    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat:no-repeat;
     background-color: #666666;
+    margin-top: 2px;
   }
 
   &--tg::before {
     -webkit-mask-image: url(../img/sprite.svg#telegramm);
     mask-image: url(../img/sprite.svg#telegramm);
-    -webkit-mask-size: 100%;
-    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat:no-repeat;
     background-color: #666666;
+    margin-top: 4px;
   }
 }
 
@@ -123,15 +129,21 @@
 
 .copyright__icon {
   display: block;
-  width: 27px;
+  width: 42px;
   height: 34px;
   -webkit-mask-image:url(../img/sprite.svg#htmlacademy) ;
   mask-image: url(../img/sprite.svg#htmlacademy);
   -webkit-mask-size: 100%;
   mask-size:100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   background-color: #666666;
+  margin-right: -7px;
   margin-top: 22px;
   margin-bottom: 22px;
+  @media (min-width: $tablet-width) {
+  margin-top: 48px;
+  }
 }
 
   /*stylelint-enable */
@@ -153,8 +165,10 @@
   font-size: 16px;
   line-height: 18px;
   color: $color-txt-gray;
+  padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     padding-right: 15px;
+    margin-top: 31px;
   }
 }

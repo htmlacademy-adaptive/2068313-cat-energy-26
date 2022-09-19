@@ -1,9 +1,11 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
+import htmlmin from 'gulp-htmlmin';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
+import uglify from 'gulp-terser';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
@@ -31,6 +33,7 @@ csso()
 
 const html = () => {
 return gulp.src('source/*.html')
+.pipe(htmlmin({ collapseWhitespace: true}))
 .pipe(gulp.dest('build'));
 }
 
@@ -38,6 +41,7 @@ return gulp.src('source/*.html')
 
 const scripts = () => {
 return gulp.src('source/js/script.js')
+ .pipe(uglify())
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
 }
@@ -45,15 +49,15 @@ return gulp.src('source/js/script.js')
 // Images
 
 const optimizeImages = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
-.pipe(squoosh())
-.pipe(gulp.dest('build/img'))
-}
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'))
+  }
 
-const copyImages = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
-.pipe(gulp.dest('build/img'))
-}
+  const copyImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(gulp.dest('build/img'))
+  }
 
 // WebP
 
@@ -88,7 +92,7 @@ const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
-'manifest.webmanifest',
+'source/manifest.webmanifest',
 ], {
 base: 'source'
 })
@@ -134,34 +138,34 @@ gulp.watch('source/*.html', gulp.series(html, reload));
 // Build
 
 export const build = gulp.series(
-clean,
-copy,
-optimizeImages,
-gulp.parallel(
-styles,
-html,
-scripts,
-svg,
-sprite,
-createWebp
-),
-);
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  svg,
+  sprite,
+  createWebp
+  ),
+  );
 
 // Default
 
 export default gulp.series(
-clean,
-copy,
-copyImages,
-gulp.parallel(
-styles,
-html,
-scripts,
-svg,
-sprite,
-createWebp
-),
-gulp.series(
-server,
-watcher
-));
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  svg,
+  sprite,
+  createWebp
+  ),
+  gulp.series(
+  server,
+  watcher
+  ));
