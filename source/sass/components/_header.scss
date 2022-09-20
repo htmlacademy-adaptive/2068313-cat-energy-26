@@ -85,10 +85,6 @@
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
 
-  &:focus {
-    background-image: url(../img/sprite.svg#logo_mobile-close);
-  }
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -209,11 +205,6 @@
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid #ffffff;
   }
-}
-
-.nav__toggle:hover,
-.nav:focus-within > .nav__wrapper {
-  display: flex;
 }
 
 .nav {
