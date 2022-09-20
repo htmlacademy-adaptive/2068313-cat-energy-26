@@ -43,7 +43,15 @@
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
-    width: 230px;
+    width: 250px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 280px;
+    width: 245px;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -92,7 +100,7 @@
     display: block;
     width: 75px;
     height: 75px;
-    margin-top: 20px;
+    margin-top: 18px;
     position: absolute;
     top: 5px;
     left: -47px;
@@ -100,6 +108,7 @@
     background-size: 100%;
 
     @media (min-width: $tablet-width) {
+      margin-top: 20px;
       width: 100px;
       height: 80px;
       top: 54px;
@@ -123,5 +132,11 @@
     background-image: url(../img/sprite.svg#clock);
   }
 }
+.explanation__br{
+  display: none;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
   /*stylelint-enable */
