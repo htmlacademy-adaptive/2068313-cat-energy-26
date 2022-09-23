@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Кэт энерджи</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.min.css">
-  <script defer src="js/script.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/script.js"></script>
+  </head>
 
 <body>
 
   <header class="main-header container">
 
-    <a href="index.html" class="main-header__logo">
-      <span class="main-header__logo-img"></span>
+    <div class="main-header-link">
 
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-big.svg" width="202" height="60">
-        <source media="(min-width: 768px)" srcset="img/logo-middle.svg" width="174" height="52">
-        <img class="main-header__logo-text" src="img/logo-title.svg" width="101" height="18" alt="логотип компании.">
-      </picture>
-    </a>
+      <a href="index.html" class="main-header__logo">
+
+
+        <span class="main-header__logo-img"></span>
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-big.svg" width="202" height="60">
+          <source media="(min-width: 768px)" srcset="img/logo-middle.svg" width="174" height="52">
+          <img class="main-header__logo-text" src="img/logo-title.svg" width="101" height="18" alt="логотип компании.">
+        </picture>
+      </a>
+
+    </div>
 
     <nav class="nav">
+
+      <!-- nav__toggle-close кнопка закрытия -->
+      <!-- nav__toggle-active кнопка открытия -->
 
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+
+      <!--- nav__wrapper-active для открытия меню -->
+      <!-- nav__wrapper-js для работы с js -->
 
       <div class="nav__wrapper">
 
@@ -104,13 +120,13 @@
 
         <label class="input-desc input-email">
           E-mail:*
-          <input class="input_cond" type="email" placeholder="kuklachev@gmail.com">
+          <input class="input-cond" type="email" placeholder="kuklachev@gmail.com">
           <span class="input-email-letter"></span>
         </label>
 
         <label class="input-desc input-tel">
           Телефон:*
-          <input class="input_cond" type="tel" placeholder="8 (960) 900-60-90">
+          <input class="input-cond" type="tel" placeholder="8 (960) 900-60-90">
           <span class="input-email-tel"></span>
         </label>
       </fieldset>
