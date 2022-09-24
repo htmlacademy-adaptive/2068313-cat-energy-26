@@ -84,7 +84,7 @@
 }
 
   /*stylelint-disable */
-  .input_cond {
+  .input-cond {
     @media (min-width: $tablet-width) {
       margin-right: 38px;
 
@@ -97,7 +97,7 @@
     }
   }
 
-.input_cond:focus ~ .input-email-letter{
+.input-cond:focus ~ .input-email-letter{
   background-color: #68B738;;
 }
 
@@ -105,11 +105,11 @@
   background-color: #68B738;;
 }
 
-.input_cond:invalid ~ .input-email-letter{
+.input-cond:invalid ~ .input-email-letter{
   background-color: #FF8282;
 }
 
-.input_cond:not(:placeholder-shown):not(:focus):invalid ~ .input-email-tel{
+.input-cond:not(:placeholder-shown):not(:focus):invalid ~ .input-email-tel{
   background-color: #FF8282;
 }
 

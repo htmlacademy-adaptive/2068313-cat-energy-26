@@ -82,14 +82,27 @@
   padding-top: 0;
 }
 
+
+/* stylelint-disable  */
+
 .location {
   overflow: hidden;
   height: 363px;
+  background-image: url(../img/map-mobile.png);
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    background-image: url(../img/map-table.png);
+  }
+
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+    background-image: url(../img/map-desktop.png);
   }
 }
+
+/* stylelint-enable  */
 
 .location iframe {
   display: block;

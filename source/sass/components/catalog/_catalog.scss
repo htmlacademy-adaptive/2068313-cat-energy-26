@@ -189,10 +189,10 @@
 
 .addition__button {
   margin-bottom: 20px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     margin-top: 6px;
-    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -208,7 +208,7 @@
 .addition__gift {
   width: 100%;
   margin-top: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   border-top: 1px solid #cdcdcd;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/bag-mobile@1x.png);
   background-repeat: no-repeat;
@@ -341,13 +341,15 @@
   margin-top: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 15px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
   }
 }
 
 .location-catalog {
-  height: 366px;
-
   @media (min-width: $tablet-width) {
     height: 400px;
   }
