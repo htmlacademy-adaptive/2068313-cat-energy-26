@@ -86,8 +86,8 @@
   width: 100%;
   background: none;
 
-  @media (min-width: $tablet-width) {
-   width: initial;
+    @media (min-width: $tablet-width) {
+      width: initial;
   }
 }
 
@@ -260,4 +260,3 @@
     border-bottom: 2px solid #ffffff;
   }
 }
-

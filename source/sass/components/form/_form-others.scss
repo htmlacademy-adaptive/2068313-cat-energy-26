@@ -114,21 +114,8 @@
     }
   }
 
-  &:focus-visible+label > .radio-bg {
-    background: $color-bg-item;
-    border-radius: 50%;
-    width: 14px;
-    height: 14px;
-    margin-left: -37px;
-    margin-right: 23px;
-
-    @media (min-width: $tablet-width) {
-      margin-left: -48px;
-      margin-top: 2px;
-      margin-right: 32px;
-      width: 16px;
-      height: 16px;
-    }
+  &:focus-visible+label::before{
+    border-color: black;
   }
 
   &+label {
@@ -214,21 +201,9 @@
       height: 30px;
     }
   }
-    &:focus-visible+label > .checkbox-bg {
-      background-image: url(../img/sprite.svg#vector);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      width: 18px;
-      height: 14px;
-      margin-left: -38px;
-      margin-right: 20px;
 
-    @media (min-width: $tablet-width) {
-      margin-left: -50px;
-      width: 30px;
-      height: 30px;
-    }
+  &:focus-visible+label::before{
+    border-color: black;
   }
 
   & + label {
