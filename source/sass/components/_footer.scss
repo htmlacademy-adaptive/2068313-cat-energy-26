@@ -138,12 +138,21 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   background-color: #666666;
-  margin-right: -7px;
-  margin-top: 22px;
-  margin-bottom: 22px;
+
+}
+
+.copyright__link-icon {
+  padding: 2px;
+  margin: 20px 0;
+  margin-right: -8px;
+
   @media (min-width: $tablet-width) {
-  margin-top: 48px;
-  }
+    margin-top: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 45px;
+    }
 }
 
   /*stylelint-enable */
@@ -169,6 +178,11 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 15px;
-    margin-top: 31px;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 28px;
+    padding-right: 12px;
   }
 }

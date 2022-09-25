@@ -88,17 +88,31 @@
 .location {
   overflow: hidden;
   height: 363px;
-  background-image: url(../img/map-mobile.png);
+  display: block;
+  background-image: url(../img/map-mobile@1x.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/map-mobile@2x.png);
+  }
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    background-image: url(../img/map-table.png);
-  }
+    background-image: url(../img/map-table@1x.png);
 
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/map-table@2x.png);
+    }
+  }
 
   @media (min-width: $desktop-width) {
     height: 400px;
-    background-image: url(../img/map-desktop.png);
+    background-image: url(../img/map-desktop@1x.png);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/map-desktop@2x.png);
+    }
   }
 }
 
