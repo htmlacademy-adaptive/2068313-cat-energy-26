@@ -30,3 +30,15 @@ const openMenu = ()=> {
 }
 
 btnNav.addEventListener('click', openMenu);
+
+const inputRange = document.querySelector('.input-range');
+const sliderTop = document.querySelector('.slider__top');
+
+const sliderMove = ()=> {
+  sliderTop.style.width = inputRange.value + '%';
+}
+
+
+inputRange.addEventListener('input', () => {
+  sliderMove()
+});
