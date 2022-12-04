@@ -76,18 +76,18 @@
 }
 
 .input-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  color: black;
-  background-color: #666666;
-  width: 6px;
-  height: 295px;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: background-color, opacity 0.5s;
+-webkit-appearance: none;
+appearance: none;
+color: black;
+background-color: #666666;
+width: 6px;
+height: 295px;
+cursor: pointer;
+border-radius: 2px;
+transition: background-color, opacity 0.5s;
 
-   &:hover{
-   background-color: #68B738;
+    &:hover{
+    background-color: #68B738;
   }
 
   &:active {
