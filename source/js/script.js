@@ -34,12 +34,15 @@ btnNav.addEventListener('click', openMenu);
 const inputRange = document.querySelector('.input-range');
 const sliderTop = document.querySelector('.slider__top');
 const sliderRangeAfter = document.querySelector('.slider__range::after');
+const sliderButton = document.querySelector('.slider__label ');
+
 console.log(sliderRangeAfter);
 
 // sliderTop.style.width = '60%';
 
 const sliderMove = ()=> {
   sliderTop.style.width = inputRange.value + '%';
+  sliderButton.style.left = (inputRange.value - 7) + '%';
 }
 
 
