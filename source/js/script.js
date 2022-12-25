@@ -54,14 +54,15 @@ const mouseMove = (evt) => {
   sliderRange.style.left = `${percent}%`;
 }
 
-sliderRange.addEventListener('mousedown', (evt) => {
+sliderRange.addEventListener('pointerdown', (evt) => {
 evt.preventDefault();
+sliderRange.setPointerCapture(evt.pointerId);
 
-slider.addEventListener('mousemove', mouseMove)
+slider.addEventListener('pointermove', mouseMove)
 
 })
 
-sliderRange.addEventListener('mouseup', (evt) => {
+sliderRange.addEventListener('pointerup', (evt) => {
 
-  slider.removeEventListener('mousemove', mouseMove)
+  slider.removeEventListener('pointermove', mouseMove)
 })
