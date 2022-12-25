@@ -65,4 +65,3 @@ sliderRange.addEventListener('mouseup', (evt) => {
 
   slider.removeEventListener('mousemove', mouseMove)
 })
-
