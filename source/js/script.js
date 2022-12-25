@@ -39,6 +39,8 @@ const slider = document.querySelector('.slider');
 
 const mouseMove = (evt) => {
 
+  evt.preventDefault();
+
   let left = evt.clientX - sliderTop.getBoundingClientRect().left;
   let percent = left / slider.offsetWidth * 100;
 

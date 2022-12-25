@@ -66,6 +66,7 @@
   /*stylelint-disable */
 
 .slider__range {
+  touch-action:none;
   height: calc(100% - 47px);
   width: 4px;
   background: #666666;
