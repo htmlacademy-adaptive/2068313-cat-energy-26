@@ -31,14 +31,38 @@ const openMenu = ()=> {
 
 btnNav.addEventListener('click', openMenu);
 
-const inputRange = document.querySelector('.input-range');
-const sliderTop = document.querySelector('.slider__top');
+////// slider
 
-const sliderMove = ()=> {
-  sliderTop.style.width = inputRange.value + '%';
+const sliderRange = document.querySelector('.slider__range');
+const sliderTop = document.querySelector('.slider__top');
+const slider = document.querySelector('.slider');
+
+const mouseMove = (evt) => {
+
+  let left = evt.clientX - sliderTop.getBoundingClientRect().left;
+  let percent = left / slider.offsetWidth * 100;
+
+
+  if (percent < 0) {
+    percent = 0;
+  }
+  if(percent > 100) {
+    percent = 100
+  }
+
+  sliderTop.style.width = `${percent}%`;
+  sliderRange.style.left = `${percent}%`;
 }
 
+sliderRange.addEventListener('mousedown', (evt) => {
+evt.preventDefault();
 
-inputRange.addEventListener('input', () => {
-  sliderMove()
-});
+slider.addEventListener('mousemove', mouseMove)
+
+})
+
+sliderRange.addEventListener('mouseup', (evt) => {
+
+  slider.removeEventListener('mousemove', mouseMove)
+})
+
