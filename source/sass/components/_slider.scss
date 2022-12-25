@@ -1,5 +1,4 @@
 .slider {
-  --comprasion: 50%;
   height: auto;
   padding-bottom: 43px;
   position: relative;
@@ -22,7 +21,7 @@
   left: 0;
   bottom: 0;
   overflow: hidden;
-  width: var(--comprasion, 50%);
+  width: 50%;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -67,13 +66,14 @@
   /*stylelint-disable */
 
 .slider__range {
+  touch-action:none;
   height: calc(100% - 47px);
   width: 4px;
   background: #666666;
   border-radius: 2px;
   position: absolute;
   top: 5px;
-  left: var(--comprasion);
+  left: 50%;
   transition: background-image, background-color, opacity 0.5s;
 
   &:hover{
